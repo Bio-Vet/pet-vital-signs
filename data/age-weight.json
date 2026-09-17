@@ -1,0 +1,719 @@
+{
+ "meta": {
+  "name": "pet-age-weight-reference",
+  "description": "Reference tables: pet-to-human age conversion (dogs by size group, cats), healthy weight ranges by species and size group, and the 9-point WSAVA body condition score — 0.9 preview: compiled from the vet-reviewed BioVet knowledge base and international guidance (WSAVA/AAHA), formal veterinary sign-off pending.",
+  "version": "0.9.0",
+  "license": "CC-BY-4.0",
+  "attribution": "BioVet veterinary clinic network, Moscow — https://bio.vet",
+  "reviewed_by": "PENDING veterinary review (BioVet clinic network)",
+  "last_review": null,
+  "disclaimer": "Reference ranges for healthy resting adult animals unless stated otherwise. Individual variation is normal; a single reading outside the range is not a diagnosis. Educational data — not a substitute for veterinary examination.",
+  "review_status": "pending"
+ },
+ "age_conversion": [
+  {
+   "species": "dog",
+   "size_group": "small",
+   "pet_age_years": 1,
+   "human_age_years": 15
+  },
+  {
+   "species": "dog",
+   "size_group": "medium",
+   "pet_age_years": 1,
+   "human_age_years": 15
+  },
+  {
+   "species": "dog",
+   "size_group": "large",
+   "pet_age_years": 1,
+   "human_age_years": 15
+  },
+  {
+   "species": "dog",
+   "size_group": "giant",
+   "pet_age_years": 1,
+   "human_age_years": 12
+  },
+  {
+   "species": "dog",
+   "size_group": "small",
+   "pet_age_years": 2,
+   "human_age_years": 24
+  },
+  {
+   "species": "dog",
+   "size_group": "medium",
+   "pet_age_years": 2,
+   "human_age_years": 24
+  },
+  {
+   "species": "dog",
+   "size_group": "large",
+   "pet_age_years": 2,
+   "human_age_years": 24
+  },
+  {
+   "species": "dog",
+   "size_group": "giant",
+   "pet_age_years": 2,
+   "human_age_years": 22
+  },
+  {
+   "species": "dog",
+   "size_group": "small",
+   "pet_age_years": 3,
+   "human_age_years": 28
+  },
+  {
+   "species": "dog",
+   "size_group": "medium",
+   "pet_age_years": 3,
+   "human_age_years": 28
+  },
+  {
+   "species": "dog",
+   "size_group": "large",
+   "pet_age_years": 3,
+   "human_age_years": 28
+  },
+  {
+   "species": "dog",
+   "size_group": "giant",
+   "pet_age_years": 3,
+   "human_age_years": 31
+  },
+  {
+   "species": "dog",
+   "size_group": "small",
+   "pet_age_years": 5,
+   "human_age_years": 36
+  },
+  {
+   "species": "dog",
+   "size_group": "medium",
+   "pet_age_years": 5,
+   "human_age_years": 36
+  },
+  {
+   "species": "dog",
+   "size_group": "large",
+   "pet_age_years": 5,
+   "human_age_years": 36
+  },
+  {
+   "species": "dog",
+   "size_group": "giant",
+   "pet_age_years": 5,
+   "human_age_years": 45
+  },
+  {
+   "species": "dog",
+   "size_group": "small",
+   "pet_age_years": 7,
+   "human_age_years": 44
+  },
+  {
+   "species": "dog",
+   "size_group": "medium",
+   "pet_age_years": 7,
+   "human_age_years": 47
+  },
+  {
+   "species": "dog",
+   "size_group": "large",
+   "pet_age_years": 7,
+   "human_age_years": 50
+  },
+  {
+   "species": "dog",
+   "size_group": "giant",
+   "pet_age_years": 7,
+   "human_age_years": 56
+  },
+  {
+   "species": "dog",
+   "size_group": "small",
+   "pet_age_years": 10,
+   "human_age_years": 56
+  },
+  {
+   "species": "dog",
+   "size_group": "medium",
+   "pet_age_years": 10,
+   "human_age_years": 60
+  },
+  {
+   "species": "dog",
+   "size_group": "large",
+   "pet_age_years": 10,
+   "human_age_years": 66
+  },
+  {
+   "species": "dog",
+   "size_group": "giant",
+   "pet_age_years": 10,
+   "human_age_years": 79
+  },
+  {
+   "species": "dog",
+   "size_group": "small",
+   "pet_age_years": 13,
+   "human_age_years": 68
+  },
+  {
+   "species": "dog",
+   "size_group": "medium",
+   "pet_age_years": 13,
+   "human_age_years": 74
+  },
+  {
+   "species": "dog",
+   "size_group": "large",
+   "pet_age_years": 13,
+   "human_age_years": 82
+  },
+  {
+   "species": "dog",
+   "size_group": "giant",
+   "pet_age_years": 13,
+   "human_age_years": 100
+  },
+  {
+   "species": "dog",
+   "size_group": "small",
+   "pet_age_years": 16,
+   "human_age_years": 80
+  },
+  {
+   "species": "dog",
+   "size_group": "medium",
+   "pet_age_years": 16,
+   "human_age_years": 87
+  },
+  {
+   "species": "dog",
+   "size_group": "large",
+   "pet_age_years": 16,
+   "human_age_years": 99
+  },
+  {
+   "species": "dog",
+   "size_group": "giant",
+   "pet_age_years": 16,
+   "human_age_years": 121
+  },
+  {
+   "species": "cat",
+   "size_group": null,
+   "pet_age_years": 1,
+   "human_age_years": 15
+  },
+  {
+   "species": "cat",
+   "size_group": null,
+   "pet_age_years": 2,
+   "human_age_years": 24
+  },
+  {
+   "species": "cat",
+   "size_group": null,
+   "pet_age_years": 3,
+   "human_age_years": 28
+  },
+  {
+   "species": "cat",
+   "size_group": null,
+   "pet_age_years": 5,
+   "human_age_years": 36
+  },
+  {
+   "species": "cat",
+   "size_group": null,
+   "pet_age_years": 7,
+   "human_age_years": 44
+  },
+  {
+   "species": "cat",
+   "size_group": null,
+   "pet_age_years": 10,
+   "human_age_years": 56
+  },
+  {
+   "species": "cat",
+   "size_group": null,
+   "pet_age_years": 13,
+   "human_age_years": 68
+  },
+  {
+   "species": "cat",
+   "size_group": null,
+   "pet_age_years": 16,
+   "human_age_years": 80
+  }
+ ],
+ "age_conversion_sources": [
+  {
+   "title": "American Kennel Club — How to Calculate Dog Years to Human Years",
+   "url": "https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/"
+  },
+  {
+   "title": "International Cat Care — How to Tell Your Cat's Age in Human Years",
+   "url": "https://icatcare.org/advice/how-to-tell-your-cats-age-in-human-years/"
+  },
+  {
+   "title": "American Veterinary Medical Association — Senior Pets",
+   "url": "https://www.avma.org/resources-tools/pet-owners/petcare/senior-pets"
+  }
+ ],
+ "healthy_weight": [
+  {
+   "species": "dog",
+   "size_group": "small",
+   "example_breeds": {
+    "en": [
+     "Chihuahua",
+     "Yorkshire Terrier",
+     "Toy Poodle",
+     "Shih Tzu",
+     "Pug"
+    ],
+    "ru": [
+     "чихуахуа",
+     "йоркширский терьер",
+     "той-пудель",
+     "ши-тцу",
+     "мопс"
+    ]
+   },
+   "min_kg": 1.5,
+   "max_kg": 10,
+   "note": {
+    "en": "Healthy weight is breed- and build-specific; within the group a Chihuahua at 3 kg and a Pug at 8 kg can both be ideal. Judge by body condition score, not the scale alone.",
+    "ru": "Здоровый вес зависит от породы и сложения: в этой группе идеальны и чихуахуа в 3 кг, и мопс в 8 кг. Ориентируйтесь на кондицию тела (BCS), а не только на весы."
+   }
+  },
+  {
+   "species": "dog",
+   "size_group": "medium",
+   "example_breeds": {
+    "en": [
+     "Beagle",
+     "Cocker Spaniel",
+     "Border Collie",
+     "English Bulldog"
+    ],
+    "ru": [
+     "бигль",
+     "кокер-спаниель",
+     "бордер-колли",
+     "английский бульдог"
+    ]
+   },
+   "min_kg": 10,
+   "max_kg": 25,
+   "note": {
+    "en": "Medium breeds vary widely in build: a lean Border Collie and a stocky Bulldog of equal weight look completely different. Track waist and rib cover rather than a single target number.",
+    "ru": "Средние породы сильно различаются сложением: поджарый бордер-колли и коренастый бульдог одного веса выглядят совершенно по-разному. Следите за талией и прощупываемостью рёбер, а не за одной цифрой."
+   }
+  },
+  {
+   "species": "dog",
+   "size_group": "large",
+   "example_breeds": {
+    "en": [
+     "Labrador Retriever",
+     "Golden Retriever",
+     "German Shepherd",
+     "Boxer"
+    ],
+    "ru": [
+     "лабрадор-ретривер",
+     "золотистый ретривер",
+     "немецкая овчарка",
+     "боксёр"
+    ]
+   },
+   "min_kg": 25,
+   "max_kg": 40,
+   "note": {
+    "en": "Males typically weigh several kilograms more than females of the same breed. Obesity is especially harmful for large breeds because it accelerates joint disease.",
+    "ru": "Кобели обычно тяжелее сук той же породы на несколько килограммов. Для крупных пород ожирение особенно вредно: оно ускоряет болезни суставов."
+   }
+  },
+  {
+   "species": "dog",
+   "size_group": "giant",
+   "example_breeds": {
+    "en": [
+     "Great Dane",
+     "Saint Bernard",
+     "Newfoundland",
+     "Irish Wolfhound"
+    ],
+    "ru": [
+     "немецкий дог",
+     "сенбернар",
+     "ньюфаундленд",
+     "ирландский волкодав"
+    ]
+   },
+   "min_kg": 40,
+   "max_kg": 90,
+   "note": {
+    "en": "Giant breeds keep growing until 18–24 months; overfeeding a giant puppy strains developing joints. Adult weights above 90 kg occur in some lines but warrant a body-condition check.",
+    "ru": "Гигантские породы растут до 18–24 месяцев; перекорм щенка-гиганта перегружает формирующиеся суставы. Взрослый вес выше 90 кг встречается в отдельных линиях, но требует проверки кондиции."
+   }
+  },
+  {
+   "species": "cat",
+   "size_group": null,
+   "example_breeds": {
+    "en": [
+     "Domestic Shorthair",
+     "European Shorthair"
+    ],
+    "ru": [
+     "домашняя короткошёрстная",
+     "европейская короткошёрстная"
+    ]
+   },
+   "min_kg": 3.5,
+   "max_kg": 5.5,
+   "note": {
+    "en": "Typical healthy range for an average domestic cat; small females can be normal at about 3 kg, while large breeds such as the Maine Coon healthily reach 6–8 kg. Above the ideal, each extra half-kilogram matters.",
+    "ru": "Типичный здоровый диапазон для обычной домашней кошки; мелкие кошки могут быть в норме и при 3 кг, а крупные породы вроде мейн-куна здорово весят 6–8 кг. Сверх идеала каждые лишние полкило значимы."
+   }
+  },
+  {
+   "species": "rabbit",
+   "size_group": "dwarf",
+   "example_breeds": {
+    "en": [
+     "Netherland Dwarf",
+     "Dwarf Lop (Mini Lop)"
+    ],
+    "ru": [
+     "нидерландский карликовый",
+     "карликовый баран (мини-лоп)"
+    ]
+   },
+   "min_kg": 0.9,
+   "max_kg": 2.0,
+   "note": {
+    "en": "Dwarf breeds mature at about six months. In rabbits the dewlap fold in females is normal tissue, not automatically fat — assess condition over the ribs and spine.",
+    "ru": "Карликовые породы формируются примерно к шести месяцам. Подгрудок у крольчих — нормальная складка, а не обязательно жир: кондицию оценивайте по рёбрам и позвоночнику."
+   }
+  },
+  {
+   "species": "rabbit",
+   "size_group": "medium",
+   "example_breeds": {
+    "en": [
+     "Dutch",
+     "New Zealand White",
+     "Californian"
+    ],
+    "ru": [
+     "голландский",
+     "новозеландский белый",
+     "калифорнийский"
+    ]
+   },
+   "min_kg": 2.0,
+   "max_kg": 5.5,
+   "note": {
+    "en": "Medium and standard breeds; pet rabbits gain weight easily on unlimited pellets. Hay should form the bulk of the diet, with pellets measured, otherwise obesity and pododermatitis follow.",
+    "ru": "Средние и стандартные породы; домашние кролики легко толстеют на неограниченном комбикорме. Основой рациона должно быть сено, гранулы — дозированно, иначе ожирение и пододерматит."
+   }
+  },
+  {
+   "species": "ferret",
+   "size_group": "male",
+   "example_breeds": {
+    "en": [
+     "Ferret (hob)"
+    ],
+    "ru": [
+     "хорёк, самец (хоб)"
+    ]
+   },
+   "min_kg": 1.0,
+   "max_kg": 2.0,
+   "note": {
+    "en": "Males are roughly twice the size of females. Ferrets naturally gain up to 30–40% weight for winter and slim down in spring — seasonal swing is normal, sudden loss is not.",
+    "ru": "Самцы примерно вдвое крупнее самок. К зиме хорьки в норме набирают до 30–40% веса и худеют весной — сезонные колебания нормальны, внезапная потеря веса — нет."
+   }
+  },
+  {
+   "species": "ferret",
+   "size_group": "female",
+   "example_breeds": {
+    "en": [
+     "Ferret (jill)"
+    ],
+    "ru": [
+     "хорёк, самка (джилл)"
+    ]
+   },
+   "min_kg": 0.6,
+   "max_kg": 1.0,
+   "note": {
+    "en": "Females are markedly smaller than males; the same seasonal weight cycle applies. A jill that keeps losing weight outside the spring moult needs a veterinary check.",
+    "ru": "Самки заметно мельче самцов; сезонные колебания веса такие же. Самка, худеющая вне весенней линьки, требует ветеринарного осмотра."
+   }
+  },
+  {
+   "species": "guinea-pig",
+   "size_group": null,
+   "example_breeds": {
+    "en": [
+     "Guinea pig (all common breeds)"
+    ],
+    "ru": [
+     "морская свинка (обычные породы)"
+    ]
+   },
+   "min_kg": 0.7,
+   "max_kg": 1.2,
+   "note": {
+    "en": "Males (boars) typically weigh 900–1200 g, females (sows) 700–900 g. Weekly weighing on kitchen scales is the earliest illness detector in guinea pigs — loss over 50 g in a week deserves attention.",
+    "ru": "Самцы обычно весят 900–1200 г, самки — 700–900 г. Еженедельное взвешивание на кухонных весах — самый ранний детектор болезни у морских свинок: потеря больше 50 г за неделю заслуживает внимания."
+   }
+  },
+  {
+   "species": "hamster",
+   "size_group": "syrian",
+   "example_breeds": {
+    "en": [
+     "Syrian (golden) hamster"
+    ],
+    "ru": [
+     "сирийский (золотистый) хомяк"
+    ]
+   },
+   "min_kg": 0.1,
+   "max_kg": 0.18,
+   "note": {
+    "en": "Females usually outweigh males. Weigh weekly with a cup on kitchen scales; cheek pouches full of food can distort a reading, so weigh before feeding.",
+    "ru": "Самки обычно тяжелее самцов. Взвешивайте раз в неделю в стаканчике на кухонных весах; набитые защёчные мешки искажают цифру, поэтому взвешивайте до кормления."
+   }
+  },
+  {
+   "species": "hamster",
+   "size_group": "dwarf",
+   "example_breeds": {
+    "en": [
+     "Djungarian (winter white)",
+     "Campbell's dwarf",
+     "Roborovski"
+    ],
+    "ru": [
+     "джунгарский",
+     "хомячок Кэмпбелла",
+     "хомячок Роборовского"
+    ]
+   },
+   "min_kg": 0.025,
+   "max_kg": 0.05,
+   "note": {
+    "en": "Dwarf species weigh only 25–50 g, so even a few grams of change is significant. Djungarian and Campbell's hamsters are prone to diabetes — avoid sugary treats and monitor drinking.",
+    "ru": "Карликовые виды весят всего 25–50 г, поэтому значимы даже несколько граммов изменения. Джунгарики и хомячки Кэмпбелла склонны к диабету — избегайте сладких лакомств и следите за жаждой."
+   }
+  },
+  {
+   "species": "rat",
+   "size_group": null,
+   "example_breeds": {
+    "en": [
+     "Fancy rat"
+    ],
+    "ru": [
+     "декоративная крыса"
+    ]
+   },
+   "min_kg": 0.25,
+   "max_kg": 0.65,
+   "note": {
+    "en": "Strong sex difference: males typically 450–650 g, females 250–450 g. Older males readily lay down abdominal fat; switch treats to vegetables and increase climbing space before restricting food.",
+    "ru": "Выражен половой диморфизм: самцы обычно 450–650 г, самки — 250–450 г. Возрастные самцы легко нагуливают жир на животе; сначала замените лакомства овощами и добавьте лазанья, а не урезайте корм."
+   }
+  },
+  {
+   "species": "chinchilla",
+   "size_group": null,
+   "example_breeds": {
+    "en": [
+     "Long-tailed chinchilla"
+    ],
+    "ru": [
+     "длиннохвостая шиншилла"
+    ]
+   },
+   "min_kg": 0.4,
+   "max_kg": 0.8,
+   "note": {
+    "en": "Unusually for rodents, females are larger than males. Dense fur hides body shape completely, so condition is judged by palpating the spine and pelvis, and by regular weighing.",
+    "ru": "Необычно для грызунов: самки крупнее самцов. Плотный мех полностью скрывает силуэт, поэтому кондицию оценивают прощупыванием позвоночника и таза и регулярным взвешиванием."
+   }
+  }
+ ],
+ "healthy_weight_sources": [
+  {
+   "title": "American Kennel Club — Breed Weight Chart",
+   "url": "https://www.akc.org/expert-advice/dog-breeds/breed-weight-chart/"
+  },
+  {
+   "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rabbits",
+   "url": "https://www.merckvetmanual.com/all-other-pets/rabbits/description-and-physical-characteristics-of-rabbits"
+  },
+  {
+   "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Ferrets",
+   "url": "https://www.merckvetmanual.com/all-other-pets/ferrets/description-and-physical-characteristics-of-ferrets"
+  },
+  {
+   "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Guinea Pigs",
+   "url": "https://www.merckvetmanual.com/all-other-pets/guinea-pigs/description-and-physical-characteristics-of-guinea-pigs"
+  },
+  {
+   "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Hamsters",
+   "url": "https://www.merckvetmanual.com/all-other-pets/hamsters/description-and-physical-characteristics-of-hamsters"
+  },
+  {
+   "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rats",
+   "url": "https://www.merckvetmanual.com/all-other-pets/rats/description-and-physical-characteristics-of-rats"
+  },
+  {
+   "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Chinchillas",
+   "url": "https://www.merckvetmanual.com/all-other-pets/chinchillas/description-and-physical-characteristics-of-chinchillas"
+  },
+  {
+   "title": "Cornell Feline Health Center — Obesity",
+   "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/obesity"
+  }
+ ],
+ "body_condition_score": [
+  {
+   "score": 1,
+   "category": "underweight",
+   "label": {
+    "en": "Emaciated",
+    "ru": "Истощение"
+   },
+   "description": {
+    "en": "Ribs, spine and pelvic bones are visible from a distance even under fur; no palpable body fat at all; severe waist tuck and obvious loss of muscle mass over the back and thighs.",
+    "ru": "Рёбра, позвоночник и кости таза видны издалека даже под шерстью; жировой слой не прощупывается совсем; резко выраженная талия и заметная потеря мышц на спине и бёдрах."
+   }
+  },
+  {
+   "score": 2,
+   "category": "underweight",
+   "label": {
+    "en": "Very thin",
+    "ru": "Сильная худоба"
+   },
+   "description": {
+    "en": "Ribs and spine are easily seen with no fat cover; the waist and abdominal tuck are extreme; hip bones prominent; early muscle loss may be felt along the spine.",
+    "ru": "Рёбра и позвоночник хорошо видны, жировой прослойки нет; талия и подтянутость живота чрезмерные; выступают кости таза; вдоль позвоночника может ощущаться начальная потеря мышц."
+   }
+  },
+  {
+   "score": 3,
+   "category": "underweight",
+   "label": {
+    "en": "Thin",
+    "ru": "Худоба"
+   },
+   "description": {
+    "en": "Ribs are easily felt and may be visible without pressing; tops of the lumbar vertebrae visible; an obvious waist behind the ribs and a pronounced abdominal tuck, but muscle mass is preserved.",
+    "ru": "Рёбра легко прощупываются и могут быть видны без нажатия; видны верхушки поясничных позвонков; за рёбрами отчётливая талия, живот заметно подтянут, но мышечная масса сохранена."
+   }
+  },
+  {
+   "score": 4,
+   "category": "ideal",
+   "label": {
+    "en": "Lean — lower ideal",
+    "ru": "Стройный — нижняя граница нормы"
+   },
+   "description": {
+    "en": "Ribs are easily palpable with minimal fat covering; the waist is easily seen from above and the belly is tucked up when viewed from the side; a healthy, athletic silhouette.",
+    "ru": "Рёбра легко прощупываются под минимальным слоем жира; талия хорошо видна сверху, живот подтянут при взгляде сбоку; здоровый, спортивный силуэт."
+   }
+  },
+  {
+   "score": 5,
+   "category": "ideal",
+   "label": {
+    "en": "Ideal",
+    "ru": "Идеальная кондиция"
+   },
+   "description": {
+    "en": "Ribs are palpable without excess fat cover; the waist is visible behind the ribs from above; the abdomen is tucked up from the side; smooth body contours without fat pads.",
+    "ru": "Рёбра прощупываются без избыточного жирового слоя; сверху за рёбрами видна талия; сбоку живот подтянут; контуры тела ровные, без жировых отложений."
+   }
+  },
+  {
+   "score": 6,
+   "category": "overweight",
+   "label": {
+    "en": "Slightly overweight",
+    "ru": "Небольшой избыток веса"
+   },
+   "description": {
+    "en": "Ribs are palpable with slight excess fat; the waist is discernible from above but not prominent; the abdominal tuck is only mild; small fat deposits may appear over the loin.",
+    "ru": "Рёбра прощупываются через небольшой излишек жира; талия сверху различима, но сглажена; подтянутость живота выражена слабо; над поясницей могут появляться небольшие отложения."
+   }
+  },
+  {
+   "score": 7,
+   "category": "overweight",
+   "label": {
+    "en": "Overweight",
+    "ru": "Избыточный вес"
+   },
+   "description": {
+    "en": "Ribs are felt only with pressure through a heavy fat cover; fat deposits over the loins and tail base; the waist is absent or barely visible and the belly line is straight or rounded.",
+    "ru": "Рёбра прощупываются только с нажимом через плотный слой жира; отложения на пояснице и у основания хвоста; талии нет или она едва заметна, линия живота прямая или округлая."
+   }
+  },
+  {
+   "score": 8,
+   "category": "obese",
+   "label": {
+    "en": "Obese",
+    "ru": "Ожирение"
+   },
+   "description": {
+    "en": "Ribs cannot be felt under a very heavy fat cover; prominent fat over the loin and tail base; no waist and no abdominal tuck; the abdomen may be visibly rounded and distended.",
+    "ru": "Рёбра не прощупываются под очень плотным жировым слоем; выраженные отложения на пояснице и у основания хвоста; ни талии, ни подтянутости живота; живот заметно округлён."
+   }
+  },
+  {
+   "score": 9,
+   "category": "obese",
+   "label": {
+    "en": "Severely obese",
+    "ru": "Выраженное ожирение"
+   },
+   "description": {
+    "en": "Massive fat deposits over the chest, spine and tail base, plus fat on the neck and limbs; the belly sags and is clearly distended; movement and grooming are visibly impaired.",
+    "ru": "Массивные жировые отложения на груди, позвоночнике и у основания хвоста, жир на шее и конечностях; живот провисает и явно увеличен; движение и уход за шерстью заметно затруднены."
+   }
+  }
+ ],
+ "body_condition_score_sources": [
+  {
+   "title": "WSAVA — Body Condition Score chart, dogs (9-point)",
+   "url": "https://wsava.org/wp-content/uploads/2020/01/Body-Condition-Score-Dog.pdf"
+  },
+  {
+   "title": "WSAVA — Body Condition Score chart, cats (9-point)",
+   "url": "https://wsava.org/wp-content/uploads/2020/08/Body-Condition-Score-cat-updated-August-2020.pdf"
+  },
+  {
+   "title": "WSAVA — Global Nutrition Guidelines and Toolkit",
+   "url": "https://wsava.org/global-guidelines/global-nutrition-guidelines/"
+  }
+ ]
+}

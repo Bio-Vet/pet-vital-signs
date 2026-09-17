@@ -1,0 +1,1415 @@
+{
+ "meta": {
+  "name": "pet-vital-signs",
+  "description": "Normal physiological parameters (temperature, heart rate, respiratory rate, CRT) for companion animals by species, size group and life stage, with red-flag thresholds — 0.9 preview: compiled from the vet-reviewed BioVet knowledge base and international guidance (WSAVA/AAHA), formal veterinary sign-off pending.",
+  "version": "0.9.0",
+  "license": "CC-BY-4.0",
+  "attribution": "BioVet veterinary clinic network, Moscow — https://bio.vet",
+  "reviewed_by": "PENDING veterinary review (BioVet clinic network)",
+  "last_review": null,
+  "disclaimer": "Reference ranges for healthy resting adult animals unless stated otherwise. Individual variation is normal; a single reading outside the range is not a diagnosis. Educational data — not a substitute for veterinary examination.",
+  "review_status": "pending"
+ },
+ "vitals": [
+  {
+   "id": "dog-small-adult-temperature",
+   "species": "dog",
+   "size_group": "small",
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 37.5,
+   "normal_max": 39.2,
+   "red_flag": {
+    "en": "Above 40.0 °C or below 37.0 °C — see a veterinarian the same day. 41.0 °C and above (possible heatstroke) or a cold, lethargic dog is an emergency.",
+    "ru": "Выше 40,0 °C или ниже 37,0 °C — покажите собаку врачу в тот же день. 41,0 °C и выше (возможен тепловой удар) либо холодная и вялая собака — экстренное состояние."
+   },
+   "notes": {
+    "en": "Measure rectally with a digital thermometer and a water-based lubricant, holding it for 30–60 seconds. Ear readings and a “warm nose” are unreliable. Excitement, exercise or hot weather can add roughly 0.5 °C, so re-check after 20–30 minutes of rest. Body size has little effect on normal temperature.",
+    "ru": "Измеряйте ректально электронным термометром со смазкой на водной основе, удерживая его 30–60 секунд. Ушные замеры и «тёплый нос» ненадёжны. Возбуждение, нагрузка и жара завышают показание примерно на 0,5 °C — перепроверьте после 20–30 минут покоя. Размер собаки почти не влияет на норму."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "VCA Animal Hospitals — Taking Your Pet's Temperature",
+     "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
+    }
+   ]
+  },
+  {
+   "id": "dog-small-adult-heart-rate",
+   "species": "dog",
+   "size_group": "small",
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 90,
+   "normal_max": 140,
+   "red_flag": {
+    "en": "A resting rate persistently above 180 bpm, or below 60 bpm together with weakness, stumbling or fainting — go to the clinic; collapse combined with an abnormal rate or rhythm is an emergency.",
+    "ru": "Стойко выше 180 уд/мин в покое или ниже 60 уд/мин на фоне слабости, шаткости или обмороков — в клинику; коллапс в сочетании с ненормальным ритмом — экстренная ситуация."
+   },
+   "notes": {
+    "en": "Feel the pulse on the inner thigh (femoral artery) or the heartbeat just behind the left elbow; count beats for 15 seconds and multiply by four. Count only at rest — excitement, heat and pain raise the rate. A rhythm that speeds up on inhaling and slows on exhaling (sinus arrhythmia) is normal in dogs. Toy and small breeds normally run faster than large dogs.",
+    "ru": "Пульс ищите на внутренней поверхности бедра (бедренная артерия) или приложите ладонь к грудной клетке сразу за левым локтем; считайте удары 15 секунд и умножьте на четыре. Считайте только в покое — возбуждение, жара и боль учащают ритм. Ускорение на вдохе и замедление на выдохе (синусовая аритмия) для собак нормально. Той- и мелкие породы в норме бьются чаще, чем крупные собаки."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
+     "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
+    }
+   ]
+  },
+  {
+   "id": "dog-small-adult-respiratory-rate",
+   "species": "dog",
+   "size_group": "small",
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 15,
+   "normal_max": 30,
+   "red_flag": {
+    "en": "More than 40 breaths per minute at complete rest (not panting), a sleeping rate consistently above 30, laboured or noisy breathing, or bluish gums or tongue — seek veterinary help immediately.",
+    "ru": "Больше 40 вдохов в минуту в полном покое (не одышка после нагрузки), стабильно выше 30 во сне, затруднённое или шумное дыхание, синюшные дёсны или язык — немедленно к врачу."
+   },
+   "notes": {
+    "en": "Count chest movements for 30 seconds while the dog sleeps or rests calmly and multiply by two; one rise-and-fall equals one breath. Never count during or right after panting, play, heat or stress — panting is normal cooling in dogs and can exceed 200 movements per minute.",
+    "ru": "Считайте движения грудной клетки 30 секунд, пока собака спит или спокойно лежит, и умножьте на два; подъём и опускание — один вдох. Не считайте во время и сразу после одышки, игры, жары или стресса — частое дыхание с открытой пастью у собак нормальная терморегуляция, до 200 движений в минуту."
+   },
+   "sources": [
+    {
+     "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
+     "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
+     "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
+    }
+   ]
+  },
+  {
+   "id": "dog-medium-adult-temperature",
+   "species": "dog",
+   "size_group": "medium",
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 37.5,
+   "normal_max": 39.2,
+   "red_flag": {
+    "en": "Above 40.0 °C or below 37.0 °C — see a veterinarian the same day. 41.0 °C and above (possible heatstroke) or a cold, lethargic dog is an emergency.",
+    "ru": "Выше 40,0 °C или ниже 37,0 °C — покажите собаку врачу в тот же день. 41,0 °C и выше (возможен тепловой удар) либо холодная и вялая собака — экстренное состояние."
+   },
+   "notes": {
+    "en": "Measure rectally with a digital thermometer and a water-based lubricant, holding it for 30–60 seconds. Ear readings and a “warm nose” are unreliable. Excitement, exercise or hot weather can add roughly 0.5 °C, so re-check after 20–30 minutes of rest. Body size has little effect on normal temperature.",
+    "ru": "Измеряйте ректально электронным термометром со смазкой на водной основе, удерживая его 30–60 секунд. Ушные замеры и «тёплый нос» ненадёжны. Возбуждение, нагрузка и жара завышают показание примерно на 0,5 °C — перепроверьте после 20–30 минут покоя. Размер собаки почти не влияет на норму."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "VCA Animal Hospitals — Taking Your Pet's Temperature",
+     "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
+    }
+   ]
+  },
+  {
+   "id": "dog-medium-adult-heart-rate",
+   "species": "dog",
+   "size_group": "medium",
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 80,
+   "normal_max": 120,
+   "red_flag": {
+    "en": "A resting rate persistently above 160 bpm, or below 55 bpm together with weakness, stumbling or fainting — go to the clinic; collapse combined with an abnormal rate or rhythm is an emergency.",
+    "ru": "Стойко выше 160 уд/мин в покое или ниже 55 уд/мин на фоне слабости, шаткости или обмороков — в клинику; коллапс в сочетании с ненормальным ритмом — экстренная ситуация."
+   },
+   "notes": {
+    "en": "Feel the pulse on the inner thigh (femoral artery) or the heartbeat just behind the left elbow; count beats for 15 seconds and multiply by four. Count only at rest — excitement, heat and pain raise the rate. A rhythm that speeds up on inhaling and slows on exhaling (sinus arrhythmia) is normal in dogs. Fit, athletic dogs often sit near the low end of the range.",
+    "ru": "Пульс ищите на внутренней поверхности бедра (бедренная артерия) или приложите ладонь к грудной клетке сразу за левым локтем; считайте удары 15 секунд и умножьте на четыре. Считайте только в покое — возбуждение, жара и боль учащают ритм. Ускорение на вдохе и замедление на выдохе (синусовая аритмия) для собак нормально. У тренированных, спортивных собак пульс часто держится у нижней границы."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
+     "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
+    }
+   ]
+  },
+  {
+   "id": "dog-medium-adult-respiratory-rate",
+   "species": "dog",
+   "size_group": "medium",
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 15,
+   "normal_max": 30,
+   "red_flag": {
+    "en": "More than 40 breaths per minute at complete rest (not panting), a sleeping rate consistently above 30, laboured or noisy breathing, or bluish gums or tongue — seek veterinary help immediately.",
+    "ru": "Больше 40 вдохов в минуту в полном покое (не одышка после нагрузки), стабильно выше 30 во сне, затруднённое или шумное дыхание, синюшные дёсны или язык — немедленно к врачу."
+   },
+   "notes": {
+    "en": "Count chest movements for 30 seconds while the dog sleeps or rests calmly and multiply by two; one rise-and-fall equals one breath. Never count during or right after panting, play, heat or stress — panting is normal cooling in dogs and can exceed 200 movements per minute.",
+    "ru": "Считайте движения грудной клетки 30 секунд, пока собака спит или спокойно лежит, и умножьте на два; подъём и опускание — один вдох. Не считайте во время и сразу после одышки, игры, жары или стресса — частое дыхание с открытой пастью у собак нормальная терморегуляция, до 200 движений в минуту."
+   },
+   "sources": [
+    {
+     "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
+     "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
+     "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
+    }
+   ]
+  },
+  {
+   "id": "dog-large-adult-temperature",
+   "species": "dog",
+   "size_group": "large",
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 37.5,
+   "normal_max": 39.2,
+   "red_flag": {
+    "en": "Above 40.0 °C or below 37.0 °C — see a veterinarian the same day. 41.0 °C and above (possible heatstroke) or a cold, lethargic dog is an emergency.",
+    "ru": "Выше 40,0 °C или ниже 37,0 °C — покажите собаку врачу в тот же день. 41,0 °C и выше (возможен тепловой удар) либо холодная и вялая собака — экстренное состояние."
+   },
+   "notes": {
+    "en": "Measure rectally with a digital thermometer and a water-based lubricant, holding it for 30–60 seconds. Ear readings and a “warm nose” are unreliable. Excitement, exercise or hot weather can add roughly 0.5 °C, so re-check after 20–30 minutes of rest. Body size has little effect on normal temperature.",
+    "ru": "Измеряйте ректально электронным термометром со смазкой на водной основе, удерживая его 30–60 секунд. Ушные замеры и «тёплый нос» ненадёжны. Возбуждение, нагрузка и жара завышают показание примерно на 0,5 °C — перепроверьте после 20–30 минут покоя. Размер собаки почти не влияет на норму."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "VCA Animal Hospitals — Taking Your Pet's Temperature",
+     "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
+    }
+   ]
+  },
+  {
+   "id": "dog-large-adult-heart-rate",
+   "species": "dog",
+   "size_group": "large",
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 70,
+   "normal_max": 110,
+   "red_flag": {
+    "en": "A resting rate persistently above 150 bpm, or below 50 bpm together with weakness, stumbling or fainting — go to the clinic; collapse combined with an abnormal rate or rhythm is an emergency.",
+    "ru": "Стойко выше 150 уд/мин в покое или ниже 50 уд/мин на фоне слабости, шаткости или обмороков — в клинику; коллапс в сочетании с ненормальным ритмом — экстренная ситуация."
+   },
+   "notes": {
+    "en": "Feel the pulse on the inner thigh (femoral artery) or the heartbeat just behind the left elbow; count beats for 15 seconds and multiply by four. Count only at rest — excitement, heat and pain raise the rate. A rhythm that speeds up on inhaling and slows on exhaling (sinus arrhythmia) is normal in dogs. Well-conditioned large dogs may rest slightly below the range without any disease.",
+    "ru": "Пульс ищите на внутренней поверхности бедра (бедренная артерия) или приложите ладонь к грудной клетке сразу за левым локтем; считайте удары 15 секунд и умножьте на четыре. Считайте только в покое — возбуждение, жара и боль учащают ритм. Ускорение на вдохе и замедление на выдохе (синусовая аритмия) для собак нормально. У крупных тренированных собак пульс в покое может быть чуть ниже диапазона без всякой болезни."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
+     "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
+    }
+   ]
+  },
+  {
+   "id": "dog-large-adult-respiratory-rate",
+   "species": "dog",
+   "size_group": "large",
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 15,
+   "normal_max": 30,
+   "red_flag": {
+    "en": "More than 40 breaths per minute at complete rest (not panting), a sleeping rate consistently above 30, laboured or noisy breathing, or bluish gums or tongue — seek veterinary help immediately.",
+    "ru": "Больше 40 вдохов в минуту в полном покое (не одышка после нагрузки), стабильно выше 30 во сне, затруднённое или шумное дыхание, синюшные дёсны или язык — немедленно к врачу."
+   },
+   "notes": {
+    "en": "Count chest movements for 30 seconds while the dog sleeps or rests calmly and multiply by two; one rise-and-fall equals one breath. Never count during or right after panting, play, heat or stress — panting is normal cooling in dogs and can exceed 200 movements per minute.",
+    "ru": "Считайте движения грудной клетки 30 секунд, пока собака спит или спокойно лежит, и умножьте на два; подъём и опускание — один вдох. Не считайте во время и сразу после одышки, игры, жары или стресса — частое дыхание с открытой пастью у собак нормальная терморегуляция, до 200 движений в минуту."
+   },
+   "sources": [
+    {
+     "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
+     "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
+     "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
+    }
+   ]
+  },
+  {
+   "id": "dog-giant-adult-temperature",
+   "species": "dog",
+   "size_group": "giant",
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 37.5,
+   "normal_max": 39.2,
+   "red_flag": {
+    "en": "Above 40.0 °C or below 37.0 °C — see a veterinarian the same day. 41.0 °C and above (possible heatstroke) or a cold, lethargic dog is an emergency.",
+    "ru": "Выше 40,0 °C или ниже 37,0 °C — покажите собаку врачу в тот же день. 41,0 °C и выше (возможен тепловой удар) либо холодная и вялая собака — экстренное состояние."
+   },
+   "notes": {
+    "en": "Measure rectally with a digital thermometer and a water-based lubricant, holding it for 30–60 seconds. Ear readings and a “warm nose” are unreliable. Excitement, exercise or hot weather can add roughly 0.5 °C, so re-check after 20–30 minutes of rest. Body size has little effect on normal temperature.",
+    "ru": "Измеряйте ректально электронным термометром со смазкой на водной основе, удерживая его 30–60 секунд. Ушные замеры и «тёплый нос» ненадёжны. Возбуждение, нагрузка и жара завышают показание примерно на 0,5 °C — перепроверьте после 20–30 минут покоя. Размер собаки почти не влияет на норму."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "VCA Animal Hospitals — Taking Your Pet's Temperature",
+     "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
+    }
+   ]
+  },
+  {
+   "id": "dog-giant-adult-heart-rate",
+   "species": "dog",
+   "size_group": "giant",
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 60,
+   "normal_max": 100,
+   "red_flag": {
+    "en": "A resting rate persistently above 140 bpm, or below 45 bpm together with weakness, stumbling or fainting — go to the clinic; collapse combined with an abnormal rate or rhythm is an emergency.",
+    "ru": "Стойко выше 140 уд/мин в покое или ниже 45 уд/мин на фоне слабости, шаткости или обмороков — в клинику; коллапс в сочетании с ненормальным ритмом — экстренная ситуация."
+   },
+   "notes": {
+    "en": "Feel the pulse on the inner thigh (femoral artery) or the heartbeat just behind the left elbow; count beats for 15 seconds and multiply by four. Count only at rest — excitement, heat and pain raise the rate. A rhythm that speeds up on inhaling and slows on exhaling (sinus arrhythmia) is normal in dogs. Giant breeds have the slowest normal resting rates of all dogs.",
+    "ru": "Пульс ищите на внутренней поверхности бедра (бедренная артерия) или приложите ладонь к грудной клетке сразу за левым локтем; считайте удары 15 секунд и умножьте на четыре. Считайте только в покое — возбуждение, жара и боль учащают ритм. Ускорение на вдохе и замедление на выдохе (синусовая аритмия) для собак нормально. У гигантских пород самый медленный нормальный пульс среди собак."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
+     "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
+    }
+   ]
+  },
+  {
+   "id": "dog-giant-adult-respiratory-rate",
+   "species": "dog",
+   "size_group": "giant",
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 15,
+   "normal_max": 30,
+   "red_flag": {
+    "en": "More than 40 breaths per minute at complete rest (not panting), a sleeping rate consistently above 30, laboured or noisy breathing, or bluish gums or tongue — seek veterinary help immediately.",
+    "ru": "Больше 40 вдохов в минуту в полном покое (не одышка после нагрузки), стабильно выше 30 во сне, затруднённое или шумное дыхание, синюшные дёсны или язык — немедленно к врачу."
+   },
+   "notes": {
+    "en": "Count chest movements for 30 seconds while the dog sleeps or rests calmly and multiply by two; one rise-and-fall equals one breath. Never count during or right after panting, play, heat or stress — panting is normal cooling in dogs and can exceed 200 movements per minute.",
+    "ru": "Считайте движения грудной клетки 30 секунд, пока собака спит или спокойно лежит, и умножьте на два; подъём и опускание — один вдох. Не считайте во время и сразу после одышки, игры, жары или стресса — частое дыхание с открытой пастью у собак нормальная терморегуляция, до 200 движений в минуту."
+   },
+   "sources": [
+    {
+     "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
+     "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
+     "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
+    }
+   ]
+  },
+  {
+   "id": "dog-puppy-temperature",
+   "species": "dog",
+   "size_group": null,
+   "life_stage": "puppy",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 37.5,
+   "normal_max": 39.2,
+   "red_flag": {
+    "en": "Above 40.0 °C, or below 37.0 °C — vet the same day; a chilled puppy must be warmed and examined urgently, because hypothermia shuts down digestion and immunity. 41.0 °C and above is an emergency.",
+    "ru": "Выше 40,0 °C или ниже 37,0 °C — к врачу в тот же день; замёрзшего щенка нужно согреть и срочно показать врачу: переохлаждение останавливает пищеварение и подавляет иммунитет. 41,0 °C и выше — экстренная ситуация."
+   },
+   "notes": {
+    "en": "From about four weeks of age a puppy's temperature reaches the adult range; newborns run lower (see the neonate record). Puppies chill and overheat faster than adults because of their size, so measure indoors after rest and repeat suspicious readings.",
+    "ru": "Примерно с четырёх недель температура щенка достигает взрослой нормы; у новорождённых она ниже (см. запись для неонатов). Из-за малого размера щенки быстрее переохлаждаются и перегреваются, поэтому измеряйте в помещении после отдыха и перепроверяйте сомнительные значения."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
+     "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
+    }
+   ]
+  },
+  {
+   "id": "dog-puppy-heart-rate",
+   "species": "dog",
+   "size_group": null,
+   "life_stage": "puppy",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 160,
+   "normal_max": 220,
+   "red_flag": {
+    "en": "A puppy whose heart rate is persistently slow for its age, or who is weak with pale gums, needs a vet the same day. In very young puppies a slow heartbeat usually signals chilling or lack of oxygen — treat it as an emergency.",
+    "ru": "Щенок со стойко редким для его возраста пульсом либо вялый, с бледными дёснами, должен попасть к врачу в тот же день. У совсем маленьких щенков редкое сердцебиение обычно означает переохлаждение или нехватку кислорода — это экстренная ситуация."
+   },
+   "notes": {
+    "en": "Newborn puppies normally beat around 160–200 times per minute, briefly rising above 200 in the first weeks; the rate then falls gradually and approaches adult values by about six months of age. Count with a hand flat on the chest while the puppy is calm.",
+    "ru": "У новорождённых щенков сердце в норме бьётся около 160–200 раз в минуту, в первые недели — иногда выше 200; затем частота постепенно снижается и примерно к шести месяцам приближается к взрослой. Считайте, положив ладонь на грудную клетку спокойного щенка."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
+     "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
+    }
+   ]
+  },
+  {
+   "id": "dog-puppy-respiratory-rate",
+   "species": "dog",
+   "size_group": null,
+   "life_stage": "puppy",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 15,
+   "normal_max": 40,
+   "red_flag": {
+    "en": "Laboured breathing, a resting rate persistently above 40, grunting with each breath, or bluish gums or tongue — emergency. Milk coming out of the nose while nursing also needs an urgent vet check.",
+    "ru": "Затруднённое дыхание, стойко больше 40 вдохов в минуту в покое, кряхтение на каждом вдохе, синюшные дёсны или язык — экстренная ситуация. Молоко, вытекающее из носа при сосании, тоже требует срочного осмотра."
+   },
+   "notes": {
+    "en": "Count while the puppy sleeps. During active (REM) sleep puppies normally twitch and breathe fast and irregularly for short bursts — that alone is not a problem; what matters is the sustained rate and visible effort once the puppy settles.",
+    "ru": "Считайте, пока щенок спит. В фазе активного (быстрого) сна щенки в норме подёргиваются и дышат часто и неровно короткими эпизодами — само по себе это не проблема; важны устойчивая частота и видимое усилие, когда щенок спит спокойно."
+   },
+   "sources": [
+    {
+     "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
+     "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
+    },
+    {
+     "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
+     "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
+    }
+   ]
+  },
+  {
+   "id": "dog-neonate-temperature",
+   "species": "dog",
+   "size_group": null,
+   "life_stage": "neonate",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 35.0,
+   "normal_max": 37.2,
+   "red_flag": {
+    "en": "Below 35.0 °C a newborn puppy cannot nurse or digest milk and fades quickly — warm it gradually over 1–2 hours and contact a veterinarian urgently. Never feed a cold neonate.",
+    "ru": "Ниже 35,0 °C новорождённый щенок не может сосать и переваривать молоко и быстро слабеет — согревайте его постепенно, 1–2 часа, и срочно свяжитесь с врачом. Кормить переохлаждённого новорождённого нельзя."
+   },
+   "notes": {
+    "en": "Applies to the first two weeks of life: neonates cannot regulate their own temperature. By weeks three to four it rises to about 37.8 °C and reaches the adult range near one month. Keep the warm zone of the whelping box at roughly 29–32 °C during the first week.",
+    "ru": "Диапазон относится к первым двум неделям жизни: новорождённые не умеют удерживать температуру сами. К третьей–четвёртой неделе она поднимается примерно до 37,8 °C и к месяцу достигает взрослой нормы. В первую неделю тёплая зона гнезда должна быть около 29–32 °C."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
+     "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
+    },
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    }
+   ]
+  },
+  {
+   "id": "dog-all-crt",
+   "species": "dog",
+   "size_group": null,
+   "life_stage": "all",
+   "parameter": "crt_sec",
+   "unit": "seconds",
+   "normal_min": 1.0,
+   "normal_max": 2.0,
+   "red_flag": {
+    "en": "Refill slower than 2 seconds, or gums that are pale, white, grey, bluish or brick-red — suspect shock, internal bleeding, dehydration or heatstroke. This is an emergency: go to a clinic immediately.",
+    "ru": "Возврат цвета дольше 2 секунд либо бледные, белые, серые, синюшные или кирпично-красные дёсны — подозрение на шок, внутреннее кровотечение, обезвоживание или тепловой удар. Это экстренная ситуация: немедленно в клинику."
+   },
+   "notes": {
+    "en": "Capillary refill time: lift the lip, press a fingertip on a pink area of the gum until it blanches white, release and count the seconds until the colour returns. Check in good light; if the gums are black-pigmented, look at the inner surface of the lower eyelid. Practise on a healthy day to learn your dog's baseline.",
+    "ru": "Скорость наполнения капилляров: приподнимите губу, прижмите палец к розовому участку десны до побеления, отпустите и посчитайте секунды до возврата цвета. Смотрите при хорошем освещении; если дёсны пигментированы (чёрные) — оцените внутреннюю поверхность нижнего века. Потренируйтесь на здоровой собаке, чтобы знать её норму."
+   },
+   "sources": [
+    {
+     "title": "VCA Animal Hospitals — First Aid for Dogs",
+     "url": "https://vcahospitals.com/know-your-pet/first-aid-for-dogs"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
+     "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
+    }
+   ]
+  },
+  {
+   "id": "cat-adult-temperature",
+   "species": "cat",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 38.1,
+   "normal_max": 39.2,
+   "red_flag": {
+    "en": "Above 39.7 °C or below 37.5 °C — call the clinic the same day. Above 40.5 °C, or a cold, limp cat, is an emergency.",
+    "ru": "Выше 39,7 °C или ниже 37,5 °C — свяжитесь с клиникой в тот же день. Выше 40,5 °C либо холодная, обмякшая кошка — экстренная ситуация."
+   },
+   "notes": {
+    "en": "Measure rectally with a digital thermometer and lubricant, ideally with a second person gently restraining the cat in a towel. Stress from a car ride or clinic visit can raise the reading by a few tenths of a degree; human ear thermometers are inaccurate in cats.",
+    "ru": "Измеряйте ректально электронным термометром со смазкой; лучше вдвоём, мягко зафиксировав кошку в полотенце. Стресс от поездки или визита в клинику может завысить показание на несколько десятых градуса; ушные термометры для людей у кошек неточны."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "VCA Animal Hospitals — Taking Your Pet's Temperature",
+     "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
+    }
+   ]
+  },
+  {
+   "id": "cat-adult-heart-rate",
+   "species": "cat",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 140,
+   "normal_max": 220,
+   "red_flag": {
+    "en": "Persistently above 240 bpm at rest, below 120 bpm in a lethargic cat, or sudden hind-leg weakness or paralysis with crying (possible arterial thromboembolism) — emergency, go immediately.",
+    "ru": "Стойко выше 240 уд/мин в покое, ниже 120 уд/мин у вялой кошки или внезапная слабость либо паралич задних лап с криком (возможна тромбоэмболия) — экстренная ситуация, ехать немедленно."
+   },
+   "notes": {
+    "en": "Place a palm on the chest just behind the left front leg, count for 15 seconds and multiply by four. Stress strongly inflates the number: at a clinic many healthy cats reach 220, while a relaxed cat asleep at home may dip somewhat below the range. Purring makes counting hard — wait it out.",
+    "ru": "Положите ладонь на грудную клетку сразу за левой передней лапой, считайте 15 секунд и умножьте на четыре. Стресс сильно завышает цифру: в клинике у здоровых кошек бывает и 220, а у расслабленной спящей дома — чуть ниже диапазона. Мурлыканье мешает счёту — подождите, пока прекратится."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Cats",
+     "url": "https://www.merckvetmanual.com/cat-owners/introduction-to-cats"
+    }
+   ]
+  },
+  {
+   "id": "cat-adult-respiratory-rate",
+   "species": "cat",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 20,
+   "normal_max": 30,
+   "red_flag": {
+    "en": "A sleeping rate consistently above 30, a resting rate above 40, open-mouth breathing, panting, or visible belly effort — emergency. Cats almost never pant, even after play.",
+    "ru": "Стабильно больше 30 вдохов в минуту во сне, больше 40 в покое, дыхание с открытым ртом, одышка или заметная работа живота — экстренная ситуация. Кошки практически никогда не дышат с открытым ртом, даже после игры."
+   },
+   "notes": {
+    "en": "Count chest movements for 30 seconds while the cat sleeps and multiply by two — the sleeping rate is the most reliable number and the standard way to monitor cats with heart disease at home. Do not count while the cat is purring, grooming or kneading.",
+    "ru": "Считайте движения грудной клетки 30 секунд, пока кошка спит, и умножьте на два — частота во сне самая показательная, именно так дома контролируют кошек с болезнями сердца. Не считайте, пока кошка мурлычет, умывается или «месит» лапами."
+   },
+   "sources": [
+    {
+     "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
+     "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Cats",
+     "url": "https://www.merckvetmanual.com/cat-owners/introduction-to-cats"
+    }
+   ]
+  },
+  {
+   "id": "cat-kitten-temperature",
+   "species": "cat",
+   "size_group": null,
+   "life_stage": "kitten",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 38.1,
+   "normal_max": 39.2,
+   "red_flag": {
+    "en": "Above 40.0 °C, or any kitten that feels cool to the touch and is sluggish — urgent vet visit; chilled kittens must be warmed gradually and must not be fed until warm.",
+    "ru": "Выше 40,0 °C или котёнок, прохладный на ощупь и вялый — срочно к врачу; переохлаждённого котёнка согревают постепенно и не кормят, пока он не согреется."
+   },
+   "notes": {
+    "en": "From about four weeks of age kittens hold the adult range, and healthy kittens usually sit near its upper end. They lose heat quickly because of their small size, so measure in a warm room, after rest, and re-check any borderline reading.",
+    "ru": "Примерно с четырёх недель котята держат взрослую норму, причём здоровые котята обычно ближе к её верхней границе. Из-за малого размера они быстро теряют тепло, поэтому измеряйте в тёплой комнате после отдыха и перепроверяйте пограничные значения."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
+     "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
+    }
+   ]
+  },
+  {
+   "id": "cat-kitten-heart-rate",
+   "species": "cat",
+   "size_group": null,
+   "life_stage": "kitten",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 200,
+   "normal_max": 260,
+   "red_flag": {
+    "en": "A kitten that is limp with a slow or barely detectable heartbeat is an emergency — usually chilling or hypoglycaemia. Persistent racing far above the range in a quiet kitten, or pale gums, need a same-day vet visit.",
+    "ru": "Обмякший котёнок с редким или едва прощупываемым сердцебиением — экстренная ситуация; обычно это переохлаждение или гипогликемия. Стойкий пульс значительно выше диапазона у спокойного котёнка или бледные дёсны — к врачу в тот же день."
+   },
+   "notes": {
+    "en": "Kittens normally beat much faster than adult cats; the rate declines toward adult values as they approach a year of age. Count with a palm around the chest while the kitten is calm or asleep — handling and play instantly push the number up.",
+    "ru": "Сердце котёнка в норме бьётся заметно чаще, чем у взрослой кошки; к году частота снижается до взрослых значений. Считайте, обхватив ладонью грудную клетку спокойного или спящего котёнка — игра и удержание мгновенно завышают цифру."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
+     "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
+    }
+   ]
+  },
+  {
+   "id": "cat-kitten-respiratory-rate",
+   "species": "cat",
+   "size_group": null,
+   "life_stage": "kitten",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 20,
+   "normal_max": 40,
+   "red_flag": {
+    "en": "Open-mouth breathing, a sleeping rate persistently above 40, wheezing or clicking sounds, or milk from the nose while nursing — urgent veterinary visit; kittens decompensate fast.",
+    "ru": "Дыхание с открытым ртом, стабильно больше 40 вдохов в минуту во сне, хрипы или пощёлкивание, молоко из носа при сосании — срочно к врачу: состояние котят ухудшается очень быстро."
+   },
+   "notes": {
+    "en": "Count during quiet sleep for 30 seconds and double the result. Brief fast, irregular breathing with twitching during active (REM) sleep is normal in kittens; judge only the settled rate and whether the belly visibly works with each breath.",
+    "ru": "Считайте 30 секунд во время спокойного сна и удвойте результат. Короткие эпизоды частого неровного дыхания с подёргиваниями в фазе быстрого сна для котят нормальны; оценивайте частоту в спокойном сне и то, работает ли живот при каждом вдохе."
+   },
+   "sources": [
+    {
+     "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
+     "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
+    },
+    {
+     "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
+     "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
+    }
+   ]
+  },
+  {
+   "id": "cat-neonate-temperature",
+   "species": "cat",
+   "size_group": null,
+   "life_stage": "neonate",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 35.0,
+   "normal_max": 37.2,
+   "red_flag": {
+    "en": "Below 35.0 °C a newborn kitten stops nursing and digesting — warm it slowly over 1–2 hours and contact a vet urgently. Never feed a cold neonate; feeding a chilled kitten can be fatal.",
+    "ru": "Ниже 35,0 °C новорождённый котёнок перестаёт сосать и переваривать молоко — согревайте медленно, 1–2 часа, и срочно свяжитесь с врачом. Кормить переохлаждённого новорождённого нельзя — это может его погубить."
+   },
+   "notes": {
+    "en": "Applies to the first two weeks of life, when kittens cannot thermoregulate and depend on the queen and the nest. Temperature climbs to about 37.8 °C by weeks three to four; keep the nest warm zone at roughly 29–32 °C in week one.",
+    "ru": "Диапазон для первых двух недель жизни, когда котята не умеют удерживать тепло и зависят от кошки и гнезда. К третьей–четвёртой неделе температура поднимается примерно до 37,8 °C; тёплая зона гнезда в первую неделю — около 29–32 °C."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
+     "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
+    },
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    }
+   ]
+  },
+  {
+   "id": "cat-all-crt",
+   "species": "cat",
+   "size_group": null,
+   "life_stage": "all",
+   "parameter": "crt_sec",
+   "unit": "seconds",
+   "normal_min": 1.0,
+   "normal_max": 2.0,
+   "red_flag": {
+    "en": "Refill slower than 2 seconds, or pale, white, grey, bluish or brick-red gums — suspect shock, anaemia, dehydration or overheating; emergency, go to a clinic immediately.",
+    "ru": "Возврат цвета дольше 2 секунд либо бледные, белые, серые, синюшные или кирпично-красные дёсны — подозрение на шок, анемию, обезвоживание или перегрев; экстренная ситуация, немедленно в клинику."
+   },
+   "notes": {
+    "en": "Press a fingertip on a pink area of the gum until it blanches, release and count the seconds until the colour returns. Many cats resist mouth handling — wrap the cat in a towel, work fast and check in good light; learn the healthy baseline colour in advance.",
+    "ru": "Прижмите палец к розовому участку десны до побеления, отпустите и посчитайте секунды до возврата цвета. Многие кошки не дают трогать пасть — заверните кошку в полотенце, действуйте быстро и смотрите при хорошем свете; заранее запомните здоровый цвет дёсен."
+   },
+   "sources": [
+    {
+     "title": "VCA Animal Hospitals — First Aid for Dogs",
+     "url": "https://vcahospitals.com/know-your-pet/first-aid-for-dogs"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Cats",
+     "url": "https://www.merckvetmanual.com/cat-owners/introduction-to-cats"
+    }
+   ]
+  },
+  {
+   "id": "rabbit-adult-temperature",
+   "species": "rabbit",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 38.5,
+   "normal_max": 40.0,
+   "red_flag": {
+    "en": "Above 40.5 °C (heat stress) or below 38.0 °C — emergency, especially in a limp rabbit that refuses food: a low temperature in rabbits often accompanies gut stasis and shock.",
+    "ru": "Выше 40,5 °C (перегрев) или ниже 38,0 °C — экстренная ситуация, особенно у обмякшего кролика, отказывающегося от еды: низкая температура у кроликов часто сопровождает застой кишечника и шок."
+   },
+   "notes": {
+    "en": "A rabbit's normal temperature is higher than a dog's or cat's. Measure rectally, very gently, with the rabbit wrapped in a towel; a struggling rabbit can injure its own spine. Rabbits do not tolerate ambient heat above roughly 27–28 °C.",
+    "ru": "Нормальная температура кролика выше, чем у собак и кошек. Измеряйте ректально, очень осторожно, завернув кролика в полотенце: вырываясь, кролик может повредить себе позвоночник. Жару выше примерно 27–28 °C кролики переносят плохо."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rabbits",
+     "url": "https://www.merckvetmanual.com/all-other-pets/rabbits/description-and-physical-characteristics-of-rabbits"
+    }
+   ]
+  },
+  {
+   "id": "rabbit-adult-heart-rate",
+   "species": "rabbit",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 130,
+   "normal_max": 325,
+   "red_flag": {
+    "en": "A limp rabbit with a very slow or barely detectable heartbeat, or a racing heart with cold ears and refusal to eat — emergency. Also treat 8–12 hours without eating or without droppings as an emergency (gut stasis).",
+    "ru": "Обмякший кролик с очень редким или едва слышным сердцебиением либо бешеный пульс с холодными ушами и отказом от еды — экстренная ситуация. 8–12 часов без еды или без помёта тоже считайте экстренной ситуацией (застой кишечника)."
+   },
+   "notes": {
+    "en": "The range is wide because stress raises the rate sharply: handling, noise or the smell of predators can push a healthy rabbit toward the top. The heart is too fast to count by hand — use a stethoscope or feel the central ear artery, and count at home where the rabbit is calm.",
+    "ru": "Диапазон широк, потому что стресс резко учащает ритм: руки человека, шум или запах хищника способны разогнать пульс здорового кролика к верхней границе. Рукой такой пульс не сосчитать — используйте стетоскоп или артерию в центре уха и считайте дома, где кролик спокоен."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rabbits",
+     "url": "https://www.merckvetmanual.com/all-other-pets/rabbits/description-and-physical-characteristics-of-rabbits"
+    }
+   ]
+  },
+  {
+   "id": "rabbit-adult-respiratory-rate",
+   "species": "rabbit",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 30,
+   "normal_max": 60,
+   "red_flag": {
+    "en": "Open-mouth breathing in a rabbit is life-threatening — rabbits breathe almost exclusively through the nose. Laboured breathing, the head stretched up to breathe, bluish lips or nostril discharge — emergency.",
+    "ru": "Дыхание с открытым ртом у кролика угрожает жизни — кролики дышат практически только носом. Затруднённое дыхание, вытянутая вверх голова, синюшные губы или выделения из носа — экстренная ситуация."
+   },
+   "notes": {
+    "en": "Count nostril twitches or flank movements for 30 seconds from a distance, before you touch the animal, and double the result: handling alone can raise the rate well above resting values. In hot weather rapid breathing may be the first sign of dangerous overheating.",
+    "ru": "Считайте движения ноздрей или боков 30 секунд на расстоянии, до того как взять кролика в руки, и удвойте результат: само взятие на руки заметно учащает дыхание. В жару учащённое дыхание может быть первым признаком опасного перегрева."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rabbits",
+     "url": "https://www.merckvetmanual.com/all-other-pets/rabbits/description-and-physical-characteristics-of-rabbits"
+    },
+    {
+     "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
+     "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
+    }
+   ]
+  },
+  {
+   "id": "ferret-adult-temperature",
+   "species": "ferret",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 37.8,
+   "normal_max": 40.0,
+   "red_flag": {
+    "en": "Above 40.5 °C or below 37.5 °C with lethargy — same-day vet. A ferret panting or limp in a warm room is a heatstroke emergency: ferrets tolerate heat very poorly.",
+    "ru": "Выше 40,5 °C или ниже 37,5 °C на фоне вялости — к врачу в тот же день. Хорёк, дышащий с открытым ртом или обмякший в тёплой комнате, — экстренный перегрев: жару хорьки переносят очень плохо."
+   },
+   "notes": {
+    "en": "Measure rectally with a lubricated digital thermometer while a second person holds the ferret by the scruff or distracts it with a treat. Keep ambient temperature below about 27–30 °C — ferrets cannot sweat and overheat quickly in stuffy rooms or carriers.",
+    "ru": "Измеряйте ректально электронным термометром со смазкой; второй человек держит хорька за шкирку или отвлекает лакомством. Температура в помещении должна быть ниже примерно 27–30 °C — хорьки не потеют и быстро перегреваются в духоте и переносках."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Ferrets",
+     "url": "https://www.merckvetmanual.com/all-other-pets/ferrets/description-and-physical-characteristics-of-ferrets"
+    }
+   ]
+  },
+  {
+   "id": "ferret-adult-heart-rate",
+   "species": "ferret",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 180,
+   "normal_max": 250,
+   "red_flag": {
+    "en": "A weak or wobbly ferret with a very fast or very slow heartbeat, pale gums, or episodes of glassy-eyed stupor and drooling (possible low blood sugar in middle-aged ferrets) — same-day vet; collapse is an emergency.",
+    "ru": "Слабый или шатающийся хорёк с очень частым или очень редким сердцебиением, бледными дёснами либо эпизодами «стеклянного взгляда» и слюнотечения (у немолодых хорьков возможна гипогликемия) — к врачу в тот же день; коллапс — экстренная ситуация."
+   },
+   "notes": {
+    "en": "Count with fingertips or a stethoscope on the lower chest while the ferret is relaxed. Ferrets famously fall into a very deep “dead sleep” during which breathing and heartbeat slow and the animal is hard to wake — a healthy ferret rouses within a minute or two; one that stays limp does not.",
+    "ru": "Считайте пальцами или стетоскопом на нижней части грудной клетки, пока хорёк расслаблен. Хорькам свойственен очень глубокий «мёртвый сон», когда дыхание и пульс замедляются и зверька трудно разбудить — здоровый хорёк просыпается за минуту-две; тот, кто остаётся обмякшим, — нет."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Ferrets",
+     "url": "https://www.merckvetmanual.com/all-other-pets/ferrets/description-and-physical-characteristics-of-ferrets"
+    }
+   ]
+  },
+  {
+   "id": "ferret-adult-respiratory-rate",
+   "species": "ferret",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 30,
+   "normal_max": 40,
+   "red_flag": {
+    "en": "Open-mouth breathing, pronounced belly effort, coughing fits with weakness, or bluish gums — urgent vet visit; combined with a warm environment think heatstroke and start cooling on the way.",
+    "ru": "Дыхание с открытым ртом, выраженная работа живота, приступы кашля со слабостью или синюшные дёсны — срочно к врачу; в сочетании с жарой думайте о тепловом ударе и охлаждайте по дороге."
+   },
+   "notes": {
+    "en": "Typical resting values cluster around 33–36 breaths per minute. Count flank movements for 30 seconds while the ferret rests — not during play, which in ferrets comes in intense bursts. Breathing may look very slow during deep sleep; that is normal.",
+    "ru": "Типичные значения в покое — около 33–36 вдохов в минуту. Считайте движения боков 30 секунд, пока хорёк отдыхает, а не в игре: хорьки играют короткими бурными рывками. Во время глубокого сна дыхание может выглядеть очень редким — это норма."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Ferrets",
+     "url": "https://www.merckvetmanual.com/all-other-pets/ferrets/description-and-physical-characteristics-of-ferrets"
+    },
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    }
+   ]
+  },
+  {
+   "id": "guinea-pig-adult-temperature",
+   "species": "guinea-pig",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 37.2,
+   "normal_max": 39.5,
+   "red_flag": {
+    "en": "Above 39.5 °C sustained, or a cool, limp guinea pig — urgent vet visit. Not eating for 12 hours or more is itself an emergency in this species, whatever the temperature.",
+    "ru": "Стойко выше 39,5 °C либо прохладная, обмякшая морская свинка — срочно к врачу. Отказ от еды на 12 часов и больше — сам по себе экстренная ситуация для этого вида, независимо от температуры."
+   },
+   "notes": {
+    "en": "Rectal measurement stresses guinea pigs, so it is usually left to the clinic; at home judge activity, appetite and breathing instead. Guinea pigs overheat easily above roughly 26–28 °C ambient and must never be left in direct sun without shade.",
+    "ru": "Ректальное измерение — сильный стресс для морской свинки, поэтому обычно его оставляют клинике; дома оценивайте активность, аппетит и дыхание. Свинки легко перегреваются при температуре воздуха выше примерно 26–28 °C, и их нельзя оставлять на прямом солнце без тени."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Guinea Pigs",
+     "url": "https://www.merckvetmanual.com/all-other-pets/guinea-pigs/description-and-physical-characteristics-of-guinea-pigs"
+    }
+   ]
+  },
+  {
+   "id": "guinea-pig-adult-heart-rate",
+   "species": "guinea-pig",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 230,
+   "normal_max": 380,
+   "red_flag": {
+    "en": "A limp guinea pig with a barely detectable heartbeat, pale or bluish lips and ears, or cold paws — emergency. Any combination of weakness with refusal of food and water needs a same-day exotics vet.",
+    "ru": "Обмякшая свинка с едва прощупываемым сердцебиением, бледными или синюшными губами и ушами, холодными лапами — экстренная ситуация. Слабость в сочетании с отказом от еды и воды — к ветеринару по экзотам в тот же день."
+   },
+   "notes": {
+    "en": "The heart is far too fast to count by hand — the figures are for reference and stethoscope use. Handling and fear push the rate to the top of the range within seconds, so vets interpret clinic readings with that in mind. At home watch behaviour, appetite and breathing instead.",
+    "ru": "Сердце бьётся слишком часто, чтобы считать рукой — цифры даны для справки и работы со стетоскопом. Страх и удержание за секунды разгоняют пульс к верхней границе, и врачи учитывают это при осмотре. Дома ориентируйтесь на поведение, аппетит и дыхание."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Guinea Pigs",
+     "url": "https://www.merckvetmanual.com/all-other-pets/guinea-pigs/description-and-physical-characteristics-of-guinea-pigs"
+    }
+   ]
+  },
+  {
+   "id": "guinea-pig-adult-respiratory-rate",
+   "species": "guinea-pig",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 40,
+   "normal_max": 100,
+   "red_flag": {
+    "en": "Laboured breathing, clicking or rattling sounds, breathing with an open mouth, or nostril and eye discharge — urgent vet visit: pneumonia is common in guinea pigs and worsens quickly.",
+    "ru": "Затруднённое дыхание, пощёлкивание или хрипы, дыхание с открытым ртом, выделения из носа и глаз — срочно к врачу: пневмония у морских свинок встречается часто и быстро прогрессирует."
+   },
+   "notes": {
+    "en": "Count flank movements for 30 seconds from a distance before touching the animal and double the result — being picked up immediately raises the rate. Normal breathing is quiet: any sound you can hear across the room already counts as abnormal.",
+    "ru": "Считайте движения боков 30 секунд на расстоянии, до того как взять свинку в руки, и удвойте результат — на руках частота сразу растёт. Нормальное дыхание беззвучно: звук, слышимый через комнату, уже считается отклонением."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Guinea Pigs",
+     "url": "https://www.merckvetmanual.com/all-other-pets/guinea-pigs/description-and-physical-characteristics-of-guinea-pigs"
+    },
+    {
+     "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
+     "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
+    }
+   ]
+  },
+  {
+   "id": "hamster-adult-temperature",
+   "species": "hamster",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 36.2,
+   "normal_max": 37.5,
+   "red_flag": {
+    "en": "A cold, limp, barely breathing hamster in a warm room — urgent vet visit. But first rule out torpor: kept below about 10 °C, hamsters can enter a hibernation-like state that mimics death; warm the animal gradually and watch for recovery.",
+    "ru": "Холодный, обмякший, едва дышащий хомяк в тёплой комнате — срочно к врачу. Но сначала исключите оцепенение: при температуре ниже примерно 10 °C хомяки могут впадать в спячкоподобное состояние, похожее на смерть; согрейте зверька постепенно и наблюдайте."
+   },
+   "notes": {
+    "en": "Owners cannot realistically take a hamster's temperature — the range is for veterinary reference. Judge health by activity at night, appetite, coat and breathing. Keep the cage between roughly 18 and 24 °C, away from radiators, drafts and direct sun.",
+    "ru": "Реально измерить температуру хомяку владелец не может — диапазон дан для ветеринарной справки. О здоровье судите по ночной активности, аппетиту, шерсти и дыханию. Держите клетку при 18–24 °C, вдали от батарей, сквозняков и прямого солнца."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Hamsters",
+     "url": "https://www.merckvetmanual.com/all-other-pets/hamsters/description-and-physical-characteristics-of-hamsters"
+    }
+   ]
+  },
+  {
+   "id": "hamster-adult-heart-rate",
+   "species": "hamster",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 250,
+   "normal_max": 500,
+   "red_flag": {
+    "en": "A hamster lying still with a slow, barely perceptible heartbeat at normal room temperature, or one that is weak with cold limbs — urgent exotics vet. In a cool room consider torpor first and rewarm gradually.",
+    "ru": "Хомяк, лежащий неподвижно с редким, едва ощутимым сердцебиением при обычной комнатной температуре, или слабый, с холодными лапами — срочно к ветеринару по экзотам. В прохладной комнате сначала подумайте об оцепенении и постепенно согрейте."
+   },
+   "notes": {
+    "en": "At 250–500 beats per minute the heart cannot be counted by hand or watched at home — the figures exist for clinical reference. During torpor the rate drops dramatically, which is physiological, not cardiac disease. Judge day-to-day health by behaviour and appetite.",
+    "ru": "При 250–500 ударах в минуту сосчитать пульс рукой дома невозможно — цифры даны для клинической справки. В оцепенении частота резко падает — это физиология, а не болезнь сердца. В быту о здоровье судите по поведению и аппетиту."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Hamsters",
+     "url": "https://www.merckvetmanual.com/all-other-pets/hamsters/description-and-physical-characteristics-of-hamsters"
+    }
+   ]
+  },
+  {
+   "id": "hamster-adult-respiratory-rate",
+   "species": "hamster",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 35,
+   "normal_max": 130,
+   "red_flag": {
+    "en": "Laboured or noisy breathing, clicking, sitting hunched with eyes half-closed, a wet tail area (diarrhoea), or refusal of food — same-day vet: small rodents hide illness and deteriorate within hours.",
+    "ru": "Затруднённое или шумное дыхание, пощёлкивание, сгорбленная поза с полузакрытыми глазами, мокрая область хвоста (понос) или отказ от еды — к врачу в тот же день: мелкие грызуны скрывают болезнь и угасают за часы."
+   },
+   "notes": {
+    "en": "The range is wide because the rate scales with activity and ambient temperature. Count flank movements while the hamster sits still, ideally in the evening when it is naturally awake; breathing during daytime deep sleep is slower and may pause briefly, which is normal.",
+    "ru": "Диапазон широк, потому что частота зависит от активности и температуры воздуха. Считайте движения боков, когда хомяк сидит спокойно, лучше вечером, в естественное время бодрствования; днём в глубоком сне дыхание реже и может ненадолго прерываться — это норма."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Hamsters",
+     "url": "https://www.merckvetmanual.com/all-other-pets/hamsters/description-and-physical-characteristics-of-hamsters"
+    },
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    }
+   ]
+  },
+  {
+   "id": "rat-adult-temperature",
+   "species": "rat",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 35.9,
+   "normal_max": 37.5,
+   "red_flag": {
+    "en": "A cool, lethargic rat, or one with a hot body, half-closed eyes and heavy red-brown staining around the eyes and nose — same-day vet visit; combined with laboured breathing it is an emergency.",
+    "ru": "Прохладная вялая крыса либо горячая, с полузакрытыми глазами и обильными красно-бурыми выделениями вокруг глаз и носа — к врачу в тот же день; в сочетании с затруднённым дыханием — экстренная ситуация."
+   },
+   "notes": {
+    "en": "Rectal measurement is a clinic procedure; at home judge warmth of the tail and ears, activity and appetite. The red-brown rings around a rat's eyes and nose are porphyrin, not blood — a small amount is normal, heavy staining signals stress or illness.",
+    "ru": "Ректальное измерение — процедура для клиники; дома оценивайте теплоту хвоста и ушей, активность и аппетит. Красно-бурые ободки вокруг глаз и носа крысы — порфирин, а не кровь: немного — норма, обильные следы — признак стресса или болезни."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rats",
+     "url": "https://www.merckvetmanual.com/all-other-pets/rats/description-and-physical-characteristics-of-rats"
+    }
+   ]
+  },
+  {
+   "id": "rat-adult-heart-rate",
+   "species": "rat",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 250,
+   "normal_max": 450,
+   "red_flag": {
+    "en": "A limp rat with a barely detectable heartbeat, bluish tail and paws, or cold extremities with shallow breathing — emergency. Weakness plus refusal of favourite food deserves a same-day exotics vet visit.",
+    "ru": "Обмякшая крыса с едва ощутимым сердцебиением, синюшным хвостом и лапами или холодными конечностями и поверхностным дыханием — экстренная ситуация. Слабость плюс отказ от любимой еды — повод показаться ветеринару по экзотам в тот же день."
+   },
+   "notes": {
+    "en": "The rate is far beyond what a hand can count — the range serves veterinary reference and stethoscope work. Handling, new smells and unfamiliar rooms raise it instantly, so vets discount mildly high clinic readings. At home track behaviour, appetite and breathing instead.",
+    "ru": "Такой пульс рукой не сосчитать — диапазон дан для ветеринарной справки и работы со стетоскопом. Руки, новые запахи и незнакомые помещения мгновенно учащают ритм, поэтому слегка завышенные цифры на приёме врачи не переоценивают. Дома следите за поведением, аппетитом и дыханием."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rats",
+     "url": "https://www.merckvetmanual.com/all-other-pets/rats/description-and-physical-characteristics-of-rats"
+    }
+   ]
+  },
+  {
+   "id": "rat-adult-respiratory-rate",
+   "species": "rat",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 70,
+   "normal_max": 115,
+   "red_flag": {
+    "en": "Rattling, wheezing or clicking breath sounds, breathing with visible flank effort, constant sneezing with heavy porphyrin staining, or gasping — urgent vet: chronic respiratory mycoplasmosis is extremely common in pet rats and flares dangerously.",
+    "ru": "Хрипы, свист или пощёлкивание при дыхании, дыхание с заметным усилием боков, постоянное чихание с обильным порфирином или дыхание с широко открытым ртом — срочно к врачу: хронический респираторный микоплазмоз у крыс крайне распространён и опасно обостряется."
+   },
+   "notes": {
+    "en": "Count flank movements for 15–30 seconds while the rat rests and scale to a minute — rats breathe too fast for casual observation, so take several counts. Occasional single sneezes in a dusty cage are common; the trend and breathing effort matter more than one number.",
+    "ru": "Считайте движения боков 15–30 секунд у отдыхающей крысы и пересчитайте на минуту — дыхание слишком частое, поэтому сделайте несколько замеров. Редкие одиночные чихания в пыльной клетке обычны; важнее динамика и усилие при дыхании, чем одна цифра."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rats",
+     "url": "https://www.merckvetmanual.com/all-other-pets/rats/description-and-physical-characteristics-of-rats"
+    },
+    {
+     "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
+     "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
+    }
+   ]
+  },
+  {
+   "id": "chinchilla-adult-temperature",
+   "species": "chinchilla",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 36.1,
+   "normal_max": 38.0,
+   "red_flag": {
+    "en": "Red ears, drooling, rapid open-mouth breathing or lying flat in a room warmer than about 26 °C — heatstroke emergency: cool gradually and go to a vet immediately. A cold, limp chinchilla is equally urgent.",
+    "ru": "Красные уши, слюнотечение, частое дыхание с открытым ртом или распластанная поза в комнате теплее примерно 26 °C — экстренный перегрев: постепенно охлаждайте и немедленно к врачу. Холодная обмякшая шиншилла — так же срочно."
+   },
+   "notes": {
+    "en": "Chinchillas wear the densest fur of any land mammal and cannot sweat, so ambient temperature matters more than the thermometer: keep the room at roughly 16–22 °C and never above 26 °C. Rectal measurement is best left to a veterinarian.",
+    "ru": "У шиншилл самый плотный мех среди наземных млекопитающих, потеть они не умеют, поэтому температура воздуха важнее градусника: держите комнату при 16–22 °C и никогда выше 26 °C. Ректальное измерение лучше оставить ветеринару."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Chinchillas",
+     "url": "https://www.merckvetmanual.com/all-other-pets/chinchillas/description-and-physical-characteristics-of-chinchillas"
+    }
+   ]
+  },
+  {
+   "id": "chinchilla-adult-heart-rate",
+   "species": "chinchilla",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 100,
+   "normal_max": 150,
+   "red_flag": {
+    "en": "A limp chinchilla with a very slow or barely detectable heartbeat, pale or bluish gums, or collapse after heat or a fright — emergency. Weakness with refusal of food for over 12 hours also needs urgent attention.",
+    "ru": "Обмякшая шиншилла с очень редким или едва ощутимым сердцебиением, бледными или синюшными дёснами либо коллапс после жары или испуга — экстренная ситуация. Слабость с отказом от еды дольше 12 часов тоже требует срочной помощи."
+   },
+   "notes": {
+    "en": "Compared with other small rodents chinchillas have a relatively slow heart, so a calm animal can be counted with a stethoscope or fingertips on the lower chest for 15 seconds, multiplied by four. Count at home in quiet surroundings — chasing and catching skews the number.",
+    "ru": "По сравнению с другими мелкими грызунами сердце шиншиллы бьётся относительно медленно, поэтому у спокойного зверька его можно посчитать стетоскопом или пальцами на нижней части груди 15 секунд, умножив на четыре. Считайте дома в тишине — ловля и погоня искажают цифру."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual — Resting Heart Rates",
+     "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Chinchillas",
+     "url": "https://www.merckvetmanual.com/all-other-pets/chinchillas/description-and-physical-characteristics-of-chinchillas"
+    }
+   ]
+  },
+  {
+   "id": "chinchilla-adult-respiratory-rate",
+   "species": "chinchilla",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 40,
+   "normal_max": 80,
+   "red_flag": {
+    "en": "Rapid laboured breathing, breath sounds you can hear, nasal discharge, or fast breathing that does not settle in a cool quiet room within minutes — urgent vet visit; with heat exposure treat as heatstroke.",
+    "ru": "Частое затруднённое дыхание, слышимые дыхательные шумы, выделения из носа или учащённое дыхание, которое за несколько минут не успокаивается в прохладной тихой комнате, — срочно к врачу; после жары — расценивайте как тепловой удар."
+   },
+   "notes": {
+    "en": "Count flank movements for 30 seconds from a distance while the chinchilla sits quietly, then double the result. Chinchillas are nocturnal and doze through the day, so evening counts reflect their true resting state better than daytime ones.",
+    "ru": "Считайте движения боков 30 секунд на расстоянии, пока шиншилла спокойно сидит, и удвойте результат. Шиншиллы активны ночью и днём дремлют, поэтому вечерние замеры отражают истинный покой лучше дневных."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Chinchillas",
+     "url": "https://www.merckvetmanual.com/all-other-pets/chinchillas/description-and-physical-characteristics-of-chinchillas"
+    },
+    {
+     "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
+     "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
+    }
+   ]
+  },
+  {
+   "id": "parrot-small-adult-temperature",
+   "species": "parrot-small",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 40.0,
+   "normal_max": 42.0,
+   "red_flag": {
+    "en": "Body temperature in birds is a clinical measurement — the practical red flags are behavioural: a bird sitting fluffed at the cage bottom with eyes closed, too weak to perch, is an emergency regardless of any thermometer reading.",
+    "ru": "Температура тела у птиц — клинический показатель; практические тревожные признаки поведенческие: нахохленная птица на дне клетки с закрытыми глазами, не способная сидеть на жёрдочке, — экстренная ситуация независимо от градусника."
+   },
+   "notes": {
+    "en": "Applies to budgerigars, cockatiels, lovebirds and similar small parrots. Birds normally run much hotter than mammals — around 40–42 °C. Do not attempt cloacal measurement at home: restraint stresses small birds dangerously and the probe can injure the cloaca.",
+    "ru": "Диапазон для волнистых попугаев, корелл, неразлучников и других мелких попугаев. Нормальная температура птиц значительно выше, чем у млекопитающих, — около 40–42 °C. Не пытайтесь измерять её в клоаке дома: фиксация опасно стрессирует мелкую птицу, а зонд может травмировать клоаку."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
+     "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
+    },
+    {
+     "title": "VCA Animal Hospitals — Signs of Illness in Pet Birds",
+     "url": "https://vcahospitals.com/know-your-pet/signs-of-illness-in-pet-birds"
+    }
+   ]
+  },
+  {
+   "id": "parrot-small-adult-heart-rate",
+   "species": "parrot-small",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 200,
+   "normal_max": 500,
+   "red_flag": {
+    "en": "An owner cannot usefully monitor a small bird's heart — watch breathing and posture instead. A weak bird that cannot grip the perch, faints, or lies on the cage floor needs an avian vet immediately.",
+    "ru": "Следить за сердцем мелкой птицы владелец не может — наблюдайте за дыханием и позой. Слабая птица, не удерживающаяся на жёрдочке, теряющая сознание или лежащая на дне клетки, немедленно должна попасть к птичьему врачу."
+   },
+   "notes": {
+    "en": "Reference values for budgerigar- to cockatiel-sized parrots at rest; the stress of capture and restraint can roughly double the rate within seconds, which is why vets often assess birds visually before handling. The figures are for clinical use, not home monitoring.",
+    "ru": "Справочные значения для попугаев размером от волнистого до кореллы в покое; стресс поимки и фиксации способен примерно удвоить частоту за секунды, поэтому врачи сначала оценивают птицу визуально. Цифры предназначены для клиники, а не домашнего контроля."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
+     "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
+    },
+    {
+     "title": "VCA Animal Hospitals — Signs of Illness in Pet Birds",
+     "url": "https://vcahospitals.com/know-your-pet/signs-of-illness-in-pet-birds"
+    }
+   ]
+  },
+  {
+   "id": "parrot-small-adult-respiratory-rate",
+   "species": "parrot-small",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 40,
+   "normal_max": 80,
+   "red_flag": {
+    "en": "Tail bobbing with every breath, open-beak breathing at rest, clicking or wheezing, or a changed or lost voice — avian-vet emergency. Birds hide illness until late, so visible breathing trouble means the disease is already advanced.",
+    "ru": "Покачивание хвоста в такт каждому вдоху, дыхание с открытым клювом в покое, пощёлкивание или свист, изменившийся или пропавший голос — экстренно к птичьему врачу. Птицы скрывают болезнь до последнего: заметные проблемы с дыханием значат, что процесс уже запущен."
+   },
+   "notes": {
+    "en": "Count the gentle tail or flank movements for 30 seconds from outside the cage while the bird rests, and double the result. After flight a healthy bird breathes fast but settles within a few minutes; failure to settle is itself a warning sign.",
+    "ru": "Считайте лёгкие движения хвоста или боков 30 секунд, не подходя к клетке вплотную, пока птица отдыхает, и удвойте результат. После полёта здоровая птица дышит часто, но успокаивается за несколько минут; если частота не снижается — это само по себе тревожный признак."
+   },
+   "sources": [
+    {
+     "title": "VCA Animal Hospitals — Signs of Illness in Pet Birds",
+     "url": "https://vcahospitals.com/know-your-pet/signs-of-illness-in-pet-birds"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
+     "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
+    }
+   ]
+  },
+  {
+   "id": "parrot-large-adult-temperature",
+   "species": "parrot-large",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 39.5,
+   "normal_max": 42.0,
+   "red_flag": {
+    "en": "As with small parrots, temperature is measured by vets — act on behaviour: a fluffed, sleepy bird on the cage floor, loss of voice, or refusal of favourite food for a day is reason for an urgent avian-vet visit.",
+    "ru": "Как и у мелких попугаев, температуру измеряет врач — ориентируйтесь на поведение: нахохленная сонная птица на дне клетки, пропавший голос или суточный отказ от любимой еды — повод срочно обратиться к птичьему врачу."
+   },
+   "notes": {
+    "en": "Applies to African grey parrots, amazons, cockatoos and macaws. Avian body temperature is naturally high and fluctuates with activity; cloacal measurement requires trained restraint and is done during clinical examination, not at home.",
+    "ru": "Диапазон для жако, амазонов, какаду и ара. Температура тела птиц в норме высока и колеблется с активностью; измерение в клоаке требует профессиональной фиксации и выполняется на клиническом осмотре, а не дома."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
+     "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
+    },
+    {
+     "title": "VCA Animal Hospitals — Signs of Illness in Pet Birds",
+     "url": "https://vcahospitals.com/know-your-pet/signs-of-illness-in-pet-birds"
+    }
+   ]
+  },
+  {
+   "id": "parrot-large-adult-heart-rate",
+   "species": "parrot-large",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 120,
+   "normal_max": 300,
+   "red_flag": {
+    "en": "Fainting, falling off the perch, sudden weakness of wings or legs, or laboured breathing after minimal effort — emergency. Owners should not chase a sick bird to measure anything — the stress itself can be fatal.",
+    "ru": "Обморок, падение с жёрдочки, внезапная слабость крыльев или лап, одышка после минимальной нагрузки — экстренная ситуация. Не ловите больную птицу ради измерений — сам стресс может её убить."
+   },
+   "notes": {
+    "en": "Resting reference for large parrots; excitement, restraint or flight pushes the rate far higher, so single clinic readings are interpreted in context. Large parrots live for decades — regular avian check-ups catch heart and vascular disease earlier than home observation can.",
+    "ru": "Справочные значения покоя для крупных попугаев; возбуждение, фиксация и полёт сильно учащают ритм, поэтому разовые цифры на приёме оценивают в контексте. Крупные попугаи живут десятилетиями — регулярные осмотры у птичьего врача выявляют болезни сердца и сосудов раньше, чем домашнее наблюдение."
+   },
+   "sources": [
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
+     "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
+    },
+    {
+     "title": "VCA Animal Hospitals — Signs of Illness in Pet Birds",
+     "url": "https://vcahospitals.com/know-your-pet/signs-of-illness-in-pet-birds"
+    }
+   ]
+  },
+  {
+   "id": "parrot-large-adult-respiratory-rate",
+   "species": "parrot-large",
+   "size_group": null,
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 15,
+   "normal_max": 45,
+   "red_flag": {
+    "en": "Tail bobbing at rest, open-beak breathing, audible clicking or wheezing, voice change, or breathlessness after a short flight — urgent avian vet. Sudden gasping in a kitchen may mean toxic fumes (overheated non-stick pans) — ventilate and go immediately.",
+    "ru": "Покачивание хвоста в покое, дыхание с открытым клювом, слышимые щелчки или свист, изменение голоса, одышка после короткого перелёта — срочно к птичьему врачу. Внезапное удушье на кухне может означать отравление парами (перегретые антипригарные покрытия) — проветрите и езжайте немедленно."
+   },
+   "notes": {
+    "en": "Count tail movements from a distance for 30 seconds and double the result; large parrots at rest breathe noticeably slower than small ones. Count in the evening when the bird is calm, and track your bird's personal baseline over time — the trend is more telling than one reading.",
+    "ru": "Считайте движения хвоста на расстоянии 30 секунд и удвойте результат; крупные попугаи в покое дышат заметно реже мелких. Считайте вечером, когда птица спокойна, и запоминайте её личную норму — динамика говорит больше, чем разовый замер."
+   },
+   "sources": [
+    {
+     "title": "VCA Animal Hospitals — Signs of Illness in Pet Birds",
+     "url": "https://vcahospitals.com/know-your-pet/signs-of-illness-in-pet-birds"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
+     "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
+    }
+   ]
+  },
+  {
+   "id": "red-eared-slider-all-potz",
+   "species": "red-eared-slider",
+   "size_group": null,
+   "life_stage": "all",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 24,
+   "normal_max": 30,
+   "red_flag": {
+    "en": "Water persistently below 20 °C (outside a deliberately managed brumation) suppresses immunity and digestion — expect refusal to eat and lethargy; fix the setup and see an exotics vet. Gaping, bubbles or discharge from the nose, swollen eyes, or floating tilted to one side — prompt vet visit at any temperature.",
+    "ru": "Вода стабильно холоднее 20 °C (вне специально организованной зимовки) подавляет иммунитет и пищеварение — ждите отказа от еды и вялости; исправьте условия и покажите черепаху ветеринару по экзотам. Дыхание с открытым ртом, пузыри или выделения из носа, опухшие глаза, плавание с креном на бок — к врачу без промедления при любой температуре."
+   },
+   "notes": {
+    "en": "This is the preferred optimal temperature zone (POTZ) of the environment, not body temperature: reptiles take on the temperature of their surroundings. Keep water at about 24–28 °C (juveniles at the warmer end) and a dry basking platform at 29–32 °C under a heat lamp with UVB. Use two thermometers — water and basking spot — and check them daily.",
+    "ru": "Это предпочтительная температура среды (POTZ), а не тела: рептилии принимают температуру окружения. Держите воду около 24–28 °C (молодым — ближе к тёплой границе), а сухой островок для баскинга — 29–32 °C под греющей лампой с УФ-B. Нужны два термометра — в воде и на островке — с ежедневной проверкой."
+   },
+   "sources": [
+    {
+     "title": "VCA Animal Hospitals — Turtles (Aquatic) — Housing",
+     "url": "https://vcahospitals.com/know-your-pet/turtles-aquatic-housing"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Providing a Home for a Reptile",
+     "url": "https://www.merckvetmanual.com/all-other-pets/reptiles/providing-a-home-for-a-reptile"
+    }
+   ]
+  }
+ ]
+}

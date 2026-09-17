@@ -1,0 +1,46 @@
+# pet-vital-signs
+
+**Vet-reviewed normal physiological parameters for companion animals** —
+temperature, heart rate, respiratory rate, capillary refill time by species,
+size group and life stage, with red-flag thresholds ("this reading means go
+to the clinic"). Plus a second table: pet-to-human age conversion, healthy
+weight ranges and the 9-point Body Condition Score scale.
+
+> **Status: pre-release (0.9).** Assembled from standard veterinary
+> references (Merck Veterinary Manual, WSAVA, university sources) and the
+> BioVet knowledge base; currently undergoing formal review by licensed
+> veterinarians of the BioVet clinic network (Moscow, 20 clinics, 24/7).
+> Version 1.0 will carry the review date.
+
+Normal vital signs for pets exist only as PDFs and posters. Every pet app
+that wants to answer "is my dog's heart rate normal?" hardcodes its own
+table. This repo gives developers one validated, bilingual (en/ru) JSON.
+
+## Data
+
+- [`data/vital-signs.json`](data/vital-signs.json) — 11 species
+  (dogs by size group, cats, rabbit, ferret, guinea pig, hamster, rat,
+  chinchilla, parrots, red-eared slider), each parameter with a normal
+  range, measurement notes and a red-flag threshold.
+- [`data/age-weight.json`](data/age-weight.json) — pet age → human age
+  (AAHA-style, dog size groups matter), healthy weight ranges by
+  species/size, and the 9-point BCS scale with descriptions.
+
+Bilingual (en/ru). See `scripts/validate.mjs` for the enforced shape.
+
+## License
+
+Data: CC BY 4.0 — free to use with attribution
+("Data: BioVet veterinary clinic network, bio.vet"). Code: MIT.
+
+## Disclaimer
+
+Reference ranges for healthy resting animals, for educational use. A single
+reading outside the range is not a diagnosis — stress, activity and
+individual variation matter. When in doubt, call a veterinarian.
+
+## Live use
+
+These numbers power the pet-owner tools at [bio.vet](https://bio.vet)
+(symptom triage, first-visit guide). Related datasets:
+[pet-food-safety](https://github.com/Bio-Vet/pet-food-safety).

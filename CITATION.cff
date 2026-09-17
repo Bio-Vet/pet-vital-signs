@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "pet-vital-signs: vet-reviewed normal vital signs for companion animals"
+type: dataset
+authors:
+  - name: "BioVet veterinary clinic network"
+    website: "https://bio.vet"
+license: CC-BY-4.0
+repository-code: "https://github.com/Bio-Vet/pet-vital-signs"
+url: "https://bio.vet"
+version: 0.9.0
