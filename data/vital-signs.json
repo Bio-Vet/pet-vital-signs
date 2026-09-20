@@ -1,14 +1,25 @@
 {
  "meta": {
   "name": "pet-vital-signs",
-  "description": "Normal physiological parameters (temperature, heart rate, respiratory rate, CRT) for companion animals by species, size group and life stage, with red-flag thresholds — 0.9 preview: compiled from the vet-reviewed BioVet knowledge base and international guidance (WSAVA/AAHA), formal veterinary sign-off pending.",
-  "version": "0.9.0",
+  "description": "Normal physiological parameters (temperature, heart rate, respiratory rate, CRT, POTZ for reptiles) for companion animals by species, size group and life stage, with red-flag thresholds — 0.9.1: exotic species aligned with the reference table signed by the chief veterinarian of the BioVet clinic network (2026-09-20); dog and cat rows compiled from Merck/VCA/WSAVA references, veterinary sign-off pending.",
+  "version": "0.9.1",
   "license": "CC-BY-4.0",
   "attribution": "BioVet veterinary clinic network, Moscow — https://bio.vet",
-  "reviewed_by": "PENDING veterinary review (BioVet clinic network)",
-  "last_review": null,
+  "reviewed_by": "Exotic species — chief veterinarian of the BioVet clinic network, 2026-09-20 (rabbit, guinea pig, chinchilla, Syrian and dwarf hamsters, rat, ferret, budgerigar, cockatiel, Horsfield's tortoise, red-eared slider). Dogs and cats — veterinary sign-off pending.",
+  "last_review": "2026-09-20",
   "disclaimer": "Reference ranges for healthy resting adult animals unless stated otherwise. Individual variation is normal; a single reading outside the range is not a diagnosis. Educational data — not a substitute for veterinary examination.",
-  "review_status": "pending"
+  "review_status": "partial",
+  "evidence_levels": {
+   "clinic-reviewed": "value signed off by BioVet veterinarians",
+   "reference": "compiled from published veterinary references, clinic sign-off pending"
+  },
+  "changelog": [
+   {
+    "version": "0.9.1",
+    "date": "2026-09-20",
+    "changes": "Pack 20 confirmed by the chief veterinarian of BioVet (2026-09-20): exotic species aligned with the signed reference table — hamster, rat and chinchilla temperature, ferret and hamster respiratory rate, budgerigar heart/respiratory rate, red-eared slider water temperature (now potz_c); new rows for dwarf hamsters, cockatiel (parrot-medium), Horsfield's tortoise and red-eared slider heart/respiratory rate; per-row `evidence` field; healthy weights for exotics. Dogs and cats unchanged, sign-off pending."
+   }
+  ]
  },
  "vitals": [
   {
@@ -37,7 +48,8 @@
      "title": "VCA Animal Hospitals — Taking Your Pet's Temperature",
      "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-small-adult-heart-rate",
@@ -65,7 +77,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-small-adult-respiratory-rate",
@@ -93,7 +106,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-medium-adult-temperature",
@@ -121,7 +135,8 @@
      "title": "VCA Animal Hospitals — Taking Your Pet's Temperature",
      "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-medium-adult-heart-rate",
@@ -149,7 +164,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-medium-adult-respiratory-rate",
@@ -177,7 +193,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-large-adult-temperature",
@@ -205,7 +222,8 @@
      "title": "VCA Animal Hospitals — Taking Your Pet's Temperature",
      "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-large-adult-heart-rate",
@@ -233,7 +251,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-large-adult-respiratory-rate",
@@ -261,7 +280,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-giant-adult-temperature",
@@ -289,7 +309,8 @@
      "title": "VCA Animal Hospitals — Taking Your Pet's Temperature",
      "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-giant-adult-heart-rate",
@@ -317,7 +338,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-giant-adult-respiratory-rate",
@@ -345,7 +367,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-puppy-temperature",
@@ -373,7 +396,8 @@
      "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-puppy-heart-rate",
@@ -401,7 +425,8 @@
      "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-puppy-respiratory-rate",
@@ -429,7 +454,8 @@
      "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-neonate-temperature",
@@ -457,7 +483,8 @@
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "dog-all-crt",
@@ -485,7 +512,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Dogs",
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "cat-adult-temperature",
@@ -513,7 +541,8 @@
      "title": "VCA Animal Hospitals — Taking Your Pet's Temperature",
      "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "cat-adult-heart-rate",
@@ -541,7 +570,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Cats",
      "url": "https://www.merckvetmanual.com/cat-owners/introduction-to-cats"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "cat-adult-respiratory-rate",
@@ -569,7 +599,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Cats",
      "url": "https://www.merckvetmanual.com/cat-owners/introduction-to-cats"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "cat-kitten-temperature",
@@ -597,7 +628,8 @@
      "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "cat-kitten-heart-rate",
@@ -625,7 +657,8 @@
      "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "cat-kitten-respiratory-rate",
@@ -653,7 +686,8 @@
      "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "cat-neonate-temperature",
@@ -681,7 +715,8 @@
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "cat-all-crt",
@@ -709,7 +744,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Cats",
      "url": "https://www.merckvetmanual.com/cat-owners/introduction-to-cats"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "rabbit-adult-temperature",
@@ -730,6 +766,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     },
@@ -737,7 +777,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rabbits",
      "url": "https://www.merckvetmanual.com/all-other-pets/rabbits/description-and-physical-characteristics-of-rabbits"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "rabbit-adult-heart-rate",
@@ -758,6 +799,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -765,7 +810,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rabbits",
      "url": "https://www.merckvetmanual.com/all-other-pets/rabbits/description-and-physical-characteristics-of-rabbits"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "rabbit-adult-respiratory-rate",
@@ -786,6 +832,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rabbits",
      "url": "https://www.merckvetmanual.com/all-other-pets/rabbits/description-and-physical-characteristics-of-rabbits"
     },
@@ -793,7 +843,8 @@
      "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
      "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "ferret-adult-temperature",
@@ -814,6 +865,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     },
@@ -821,7 +876,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Ferrets",
      "url": "https://www.merckvetmanual.com/all-other-pets/ferrets/description-and-physical-characteristics-of-ferrets"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "ferret-adult-heart-rate",
@@ -842,6 +898,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -849,7 +909,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Ferrets",
      "url": "https://www.merckvetmanual.com/all-other-pets/ferrets/description-and-physical-characteristics-of-ferrets"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "ferret-adult-respiratory-rate",
@@ -858,8 +919,8 @@
    "life_stage": "adult",
    "parameter": "respiratory_rate_rpm",
    "unit": "breaths/min",
-   "normal_min": 30,
-   "normal_max": 40,
+   "normal_min": 33,
+   "normal_max": 36,
    "red_flag": {
     "en": "Open-mouth breathing, pronounced belly effort, coughing fits with weakness, or bluish gums — urgent vet visit; combined with a warm environment think heatstroke and start cooling on the way.",
     "ru": "Дыхание с открытым ртом, выраженная работа живота, приступы кашля со слабостью или синюшные дёсны — срочно к врачу; в сочетании с жарой думайте о тепловом ударе и охлаждайте по дороге."
@@ -870,6 +931,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Ferrets",
      "url": "https://www.merckvetmanual.com/all-other-pets/ferrets/description-and-physical-characteristics-of-ferrets"
     },
@@ -877,7 +942,8 @@
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "guinea-pig-adult-temperature",
@@ -898,6 +964,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     },
@@ -905,7 +975,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Guinea Pigs",
      "url": "https://www.merckvetmanual.com/all-other-pets/guinea-pigs/description-and-physical-characteristics-of-guinea-pigs"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "guinea-pig-adult-heart-rate",
@@ -926,6 +997,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -933,7 +1008,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Guinea Pigs",
      "url": "https://www.merckvetmanual.com/all-other-pets/guinea-pigs/description-and-physical-characteristics-of-guinea-pigs"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "guinea-pig-adult-respiratory-rate",
@@ -954,6 +1030,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Guinea Pigs",
      "url": "https://www.merckvetmanual.com/all-other-pets/guinea-pigs/description-and-physical-characteristics-of-guinea-pigs"
     },
@@ -961,17 +1041,18 @@
      "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
      "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "hamster-adult-temperature",
    "species": "hamster",
-   "size_group": null,
+   "size_group": "syrian",
    "life_stage": "adult",
    "parameter": "temperature_c",
    "unit": "°C",
-   "normal_min": 36.2,
-   "normal_max": 37.5,
+   "normal_min": 37.0,
+   "normal_max": 38.0,
    "red_flag": {
     "en": "A cold, limp, barely breathing hamster in a warm room — urgent vet visit. But first rule out torpor: kept below about 10 °C, hamsters can enter a hibernation-like state that mimics death; warm the animal gradually and watch for recovery.",
     "ru": "Холодный, обмякший, едва дышащий хомяк в тёплой комнате — срочно к врачу. Но сначала исключите оцепенение: при температуре ниже примерно 10 °C хомяки могут впадать в спячкоподобное состояние, похожее на смерть; согрейте зверька постепенно и наблюдайте."
@@ -982,6 +1063,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     },
@@ -989,12 +1074,13 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Hamsters",
      "url": "https://www.merckvetmanual.com/all-other-pets/hamsters/description-and-physical-characteristics-of-hamsters"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "hamster-adult-heart-rate",
    "species": "hamster",
-   "size_group": null,
+   "size_group": "syrian",
    "life_stage": "adult",
    "parameter": "heart_rate_bpm",
    "unit": "bpm",
@@ -1010,6 +1096,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -1017,17 +1107,18 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Hamsters",
      "url": "https://www.merckvetmanual.com/all-other-pets/hamsters/description-and-physical-characteristics-of-hamsters"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "hamster-adult-respiratory-rate",
    "species": "hamster",
-   "size_group": null,
+   "size_group": "syrian",
    "life_stage": "adult",
    "parameter": "respiratory_rate_rpm",
    "unit": "breaths/min",
    "normal_min": 35,
-   "normal_max": 130,
+   "normal_max": 135,
    "red_flag": {
     "en": "Laboured or noisy breathing, clicking, sitting hunched with eyes half-closed, a wet tail area (diarrhoea), or refusal of food — same-day vet: small rodents hide illness and deteriorate within hours.",
     "ru": "Затруднённое или шумное дыхание, пощёлкивание, сгорбленная поза с полузакрытыми глазами, мокрая область хвоста (понос) или отказ от еды — к врачу в тот же день: мелкие грызуны скрывают болезнь и угасают за часы."
@@ -1038,6 +1129,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Hamsters",
      "url": "https://www.merckvetmanual.com/all-other-pets/hamsters/description-and-physical-characteristics-of-hamsters"
     },
@@ -1045,7 +1140,8 @@
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "rat-adult-temperature",
@@ -1054,8 +1150,8 @@
    "life_stage": "adult",
    "parameter": "temperature_c",
    "unit": "°C",
-   "normal_min": 35.9,
-   "normal_max": 37.5,
+   "normal_min": 37.5,
+   "normal_max": 38.5,
    "red_flag": {
     "en": "A cool, lethargic rat, or one with a hot body, half-closed eyes and heavy red-brown staining around the eyes and nose — same-day vet visit; combined with laboured breathing it is an emergency.",
     "ru": "Прохладная вялая крыса либо горячая, с полузакрытыми глазами и обильными красно-бурыми выделениями вокруг глаз и носа — к врачу в тот же день; в сочетании с затруднённым дыханием — экстренная ситуация."
@@ -1066,6 +1162,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     },
@@ -1073,7 +1173,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rats",
      "url": "https://www.merckvetmanual.com/all-other-pets/rats/description-and-physical-characteristics-of-rats"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "rat-adult-heart-rate",
@@ -1094,6 +1195,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -1101,7 +1206,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rats",
      "url": "https://www.merckvetmanual.com/all-other-pets/rats/description-and-physical-characteristics-of-rats"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "rat-adult-respiratory-rate",
@@ -1122,6 +1228,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Rats",
      "url": "https://www.merckvetmanual.com/all-other-pets/rats/description-and-physical-characteristics-of-rats"
     },
@@ -1129,7 +1239,8 @@
      "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
      "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "chinchilla-adult-temperature",
@@ -1138,7 +1249,7 @@
    "life_stage": "adult",
    "parameter": "temperature_c",
    "unit": "°C",
-   "normal_min": 36.1,
+   "normal_min": 37.0,
    "normal_max": 38.0,
    "red_flag": {
     "en": "Red ears, drooling, rapid open-mouth breathing or lying flat in a room warmer than about 26 °C — heatstroke emergency: cool gradually and go to a vet immediately. A cold, limp chinchilla is equally urgent.",
@@ -1150,6 +1261,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     },
@@ -1157,7 +1272,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Chinchillas",
      "url": "https://www.merckvetmanual.com/all-other-pets/chinchillas/description-and-physical-characteristics-of-chinchillas"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "chinchilla-adult-heart-rate",
@@ -1178,6 +1294,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -1185,7 +1305,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Chinchillas",
      "url": "https://www.merckvetmanual.com/all-other-pets/chinchillas/description-and-physical-characteristics-of-chinchillas"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "chinchilla-adult-respiratory-rate",
@@ -1206,6 +1327,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Chinchillas",
      "url": "https://www.merckvetmanual.com/all-other-pets/chinchillas/description-and-physical-characteristics-of-chinchillas"
     },
@@ -1213,12 +1338,13 @@
      "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
      "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "parrot-small-adult-temperature",
    "species": "parrot-small",
-   "size_group": null,
+   "size_group": "budgerigar",
    "life_stage": "adult",
    "parameter": "temperature_c",
    "unit": "°C",
@@ -1234,6 +1360,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
      "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
     },
@@ -1241,17 +1371,18 @@
      "title": "VCA Animal Hospitals — Signs of Illness in Pet Birds",
      "url": "https://vcahospitals.com/know-your-pet/signs-of-illness-in-pet-birds"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "parrot-small-adult-heart-rate",
    "species": "parrot-small",
-   "size_group": null,
+   "size_group": "budgerigar",
    "life_stage": "adult",
    "parameter": "heart_rate_bpm",
    "unit": "bpm",
-   "normal_min": 200,
-   "normal_max": 500,
+   "normal_min": 250,
+   "normal_max": 600,
    "red_flag": {
     "en": "An owner cannot usefully monitor a small bird's heart — watch breathing and posture instead. A weak bird that cannot grip the perch, faints, or lies on the cage floor needs an avian vet immediately.",
     "ru": "Следить за сердцем мелкой птицы владелец не может — наблюдайте за дыханием и позой. Слабая птица, не удерживающаяся на жёрдочке, теряющая сознание или лежащая на дне клетки, немедленно должна попасть к птичьему врачу."
@@ -1262,6 +1393,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
      "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
     },
@@ -1269,17 +1404,18 @@
      "title": "VCA Animal Hospitals — Signs of Illness in Pet Birds",
      "url": "https://vcahospitals.com/know-your-pet/signs-of-illness-in-pet-birds"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "parrot-small-adult-respiratory-rate",
    "species": "parrot-small",
-   "size_group": null,
+   "size_group": "budgerigar",
    "life_stage": "adult",
    "parameter": "respiratory_rate_rpm",
    "unit": "breaths/min",
-   "normal_min": 40,
-   "normal_max": 80,
+   "normal_min": 60,
+   "normal_max": 75,
    "red_flag": {
     "en": "Tail bobbing with every breath, open-beak breathing at rest, clicking or wheezing, or a changed or lost voice — avian-vet emergency. Birds hide illness until late, so visible breathing trouble means the disease is already advanced.",
     "ru": "Покачивание хвоста в такт каждому вдоху, дыхание с открытым клювом в покое, пощёлкивание или свист, изменившийся или пропавший голос — экстренно к птичьему врачу. Птицы скрывают болезнь до последнего: заметные проблемы с дыханием значат, что процесс уже запущен."
@@ -1290,6 +1426,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "VCA Animal Hospitals — Signs of Illness in Pet Birds",
      "url": "https://vcahospitals.com/know-your-pet/signs-of-illness-in-pet-birds"
     },
@@ -1297,7 +1437,8 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
      "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "parrot-large-adult-temperature",
@@ -1325,7 +1466,8 @@
      "title": "VCA Animal Hospitals — Signs of Illness in Pet Birds",
      "url": "https://vcahospitals.com/know-your-pet/signs-of-illness-in-pet-birds"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "parrot-large-adult-heart-rate",
@@ -1353,7 +1495,8 @@
      "title": "VCA Animal Hospitals — Signs of Illness in Pet Birds",
      "url": "https://vcahospitals.com/know-your-pet/signs-of-illness-in-pet-birds"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "parrot-large-adult-respiratory-rate",
@@ -1381,17 +1524,18 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
      "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
     }
-   ]
+   ],
+   "evidence": "reference"
   },
   {
    "id": "red-eared-slider-all-potz",
    "species": "red-eared-slider",
    "size_group": null,
    "life_stage": "all",
-   "parameter": "temperature_c",
+   "parameter": "potz_c",
    "unit": "°C",
    "normal_min": 24,
-   "normal_max": 30,
+   "normal_max": 28,
    "red_flag": {
     "en": "Water persistently below 20 °C (outside a deliberately managed brumation) suppresses immunity and digestion — expect refusal to eat and lethargy; fix the setup and see an exotics vet. Gaping, bubbles or discharge from the nose, swollen eyes, or floating tilted to one side — prompt vet visit at any temperature.",
     "ru": "Вода стабильно холоднее 20 °C (вне специально организованной зимовки) подавляет иммунитет и пищеварение — ждите отказа от еды и вялости; исправьте условия и покажите черепаху ветеринару по экзотам. Дыхание с открытым ртом, пузыри или выделения из носа, опухшие глаза, плавание с креном на бок — к врачу без промедления при любой температуре."
@@ -1402,6 +1546,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
      "title": "VCA Animal Hospitals — Turtles (Aquatic) — Housing",
      "url": "https://vcahospitals.com/know-your-pet/turtles-aquatic-housing"
     },
@@ -1409,7 +1557,302 @@
      "title": "Merck Veterinary Manual (pet owner edition) — Providing a Home for a Reptile",
      "url": "https://www.merckvetmanual.com/all-other-pets/reptiles/providing-a-home-for-a-reptile"
     }
-   ]
+   ],
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "id": "hamster-dwarf-adult-heart-rate",
+   "species": "hamster",
+   "size_group": "dwarf",
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 300,
+   "normal_max": 600,
+   "red_flag": {
+    "en": "A dwarf hamster that is cold, limp and barely moving at normal room temperature, or weak with cold paws — urgent exotics vet. In a cool room think of torpor first and rewarm gradually.",
+    "ru": "Карликовый хомяк холодный, обмякший и почти не двигается при обычной комнатной температуре, или слабый, с холодными лапками — срочно к ратологу. В прохладной комнате сначала подумайте об оцепенении и согревайте постепенно."
+   },
+   "notes": {
+    "en": "Djungarian, Campbell's and Roborovski hamsters run faster than Syrians: 300–600 beats per minute cannot be counted at home and is assessed by a vet with a stethoscope or ECG. Weekly weighing (30–50 g adult) is the honest home indicator.",
+    "ru": "У джунгарского, Кэмпбелла и Роборовского пульс выше, чем у сирийского: 300–600 ударов в минуту дома не сосчитать — врач оценивает его стетоскопом или на ЭКГ. Честный домашний показатель — еженедельное взвешивание (взрослый 30–50 г)."
+   },
+   "sources": [
+    {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Hamsters",
+     "url": "https://www.merckvetmanual.com/all-other-pets/hamsters/description-and-physical-characteristics-of-hamsters"
+    }
+   ],
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "id": "hamster-dwarf-adult-respiratory-rate",
+   "species": "hamster",
+   "size_group": "dwarf",
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 60,
+   "normal_max": 150,
+   "red_flag": {
+    "en": "Whistling or wheezing, breathing faster than the upper limit at rest, open-mouth breathing, or a cold lethargic animal — same-day exotics vet.",
+    "ru": "Свист или хрип при дыхании, дыхание чаще верхней границы в покое, дыхание с открытым ртом, зверёк холодный и вялый — к ратологу в тот же день."
+   },
+   "notes": {
+    "en": "Count flank movements for 30 seconds while the hamster sleeps or sits still in daylight, then double. Dwarf species breathe roughly twice as fast as Syrians; a brief burst above the range right after running is normal.",
+    "ru": "Считайте движения боков 30 секунд, пока хомяк спит или спокойно сидит днём, и удвойте. Карликовые виды дышат примерно вдвое чаще сирийских; кратковременное учащение сразу после бега — норма."
+   },
+   "sources": [
+    {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Hamsters",
+     "url": "https://www.merckvetmanual.com/all-other-pets/hamsters/description-and-physical-characteristics-of-hamsters"
+    }
+   ],
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "id": "parrot-medium-adult-temperature",
+   "species": "parrot-medium",
+   "size_group": "cockatiel",
+   "life_stage": "adult",
+   "parameter": "temperature_c",
+   "unit": "°C",
+   "normal_min": 40.0,
+   "normal_max": 42.0,
+   "red_flag": {
+    "en": "Owners do not take a bird's temperature; a cockatiel that sits fluffed on the cage floor, feels cold, or breathes with an open beak is an avian-vet emergency.",
+    "ru": "Владельцы птице температуру не измеряют; корелла, которая сидит нахохлившись на дне клетки, холодная на ощупь или дышит с открытым клювом, — экстренно к орнитологу."
+   },
+   "notes": {
+    "en": "Birds run hotter than mammals: 40–42 °C is normal for a cockatiel, not a fever. The figure is for clinical reference — at home judge health by posture, appetite, droppings and weekly weight (80–110 g adult).",
+    "ru": "Птицы теплокровнее млекопитающих: 40–42 °C для кореллы норма, а не жар. Цифра дана для клинической справки — дома судите о здоровье по позе, аппетиту, помёту и еженедельному весу (взрослая 80–110 г)."
+   },
+   "sources": [
+    {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
+     "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
+    }
+   ],
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "id": "parrot-medium-adult-heart-rate",
+   "species": "parrot-medium",
+   "size_group": "cockatiel",
+   "life_stage": "adult",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 200,
+   "normal_max": 350,
+   "red_flag": {
+    "en": "A visibly weak bird with laboured breathing, or one that faints or falls off the perch — avian-vet emergency; do not try to count the pulse, keep the bird warm and quiet on the way.",
+    "ru": "Заметно слабая птица с тяжёлым дыханием, обморок или падение с жёрдочки — экстренно к орнитологу; пульс не считайте, по дороге держите птицу в тепле и покое."
+   },
+   "notes": {
+    "en": "200–350 beats per minute cannot be counted at home; the vet listens with a stethoscope. Handling itself raises the rate sharply, so clinic readings are taken with the bird calm.",
+    "ru": "200–350 ударов в минуту дома не сосчитать; врач слушает стетоскопом. Само удержание в руках резко учащает пульс, поэтому в клинике его оценивают у спокойной птицы."
+   },
+   "sources": [
+    {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
+     "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
+    }
+   ],
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "id": "parrot-medium-adult-respiratory-rate",
+   "species": "parrot-medium",
+   "size_group": "cockatiel",
+   "life_stage": "adult",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 40,
+   "normal_max": 50,
+   "red_flag": {
+    "en": "Breathing faster than 80 per minute at rest, tail bobbing with every breath, open beak, clicking or wheezing, sitting fluffed on the cage floor, or weight loss of 10% or more — avian-vet emergency.",
+    "ru": "Дыхание чаще 80 в минуту в покое, хвост качается при каждом вдохе, открытый клюв, щелчки или свист, птица сидит нахохлившись на дне клетки, вес упал на 10% и больше — экстренно к орнитологу."
+   },
+   "notes": {
+    "en": "Count tail or flank movements for 30 seconds from a distance while the bird rests, then double. After flight a healthy cockatiel settles within a few minutes.",
+    "ru": "Считайте движения хвоста или боков 30 секунд издалека, пока птица отдыхает, и удвойте. После полёта здоровая корелла успокаивается за несколько минут."
+   },
+   "sources": [
+    {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
+     "title": "VCA Animal Hospitals — Signs of Illness in Pet Birds",
+     "url": "https://vcahospitals.com/know-your-pet/signs-of-illness-in-pet-birds"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Introduction to Birds",
+     "url": "https://www.merckvetmanual.com/bird-owners/introduction-to-birds"
+    }
+   ],
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "id": "tortoise-all-potz",
+   "species": "tortoise",
+   "size_group": "horsfield",
+   "life_stage": "all",
+   "parameter": "potz_c",
+   "unit": "°C",
+   "normal_min": 30,
+   "normal_max": 35,
+   "red_flag": {
+    "en": "A tortoise kept without a warm zone and UVB stops eating and digesting; gaping, bubbles or mucus from the nostrils, squeaking or whistling, or a stretched neck are signs of pneumonia — prompt exotics vet.",
+    "ru": "Черепаха без тёплой зоны и УФ-B перестаёт есть и переваривать корм; дыхание с открытым ртом, пузыри или слизь из ноздрей, писк или свист, вытянутая шея — признаки пневмонии, к герпетологу без промедления."
+   },
+   "notes": {
+    "en": "Body temperature equals the surroundings, so this is the warm-zone temperature, not a body reading: a Horsfield's (Russian) tortoise needs a basking zone of about 30–35 °C under a heat lamp with UVB (10.0–12.0 for steppe species). Pulse and breathing speed up when warm and slow down when cool — physiology, not disease.",
+    "ru": "Температура тела равна температуре среды, поэтому здесь дана температура тёплой зоны, а не тела: среднеазиатской черепахе нужна зона прогрева около 30–35 °C под греющей лампой с УФ-B (для степных видов маркировка 10.0–12.0). Пульс и дыхание ускоряются на прогреве и замедляются в прохладе — это физиология, а не болезнь."
+   },
+   "sources": [
+    {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Reptiles",
+     "url": "https://www.merckvetmanual.com/all-other-pets/reptiles/description-and-physical-characteristics-of-reptiles"
+    }
+   ],
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "id": "tortoise-all-heart-rate",
+   "species": "tortoise",
+   "size_group": "horsfield",
+   "life_stage": "all",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 10,
+   "normal_max": 40,
+   "red_flag": {
+    "en": "A tortoise that is limp, unresponsive and cold in a properly heated enclosure, or with the pneumonia signs above — prompt exotics vet.",
+    "ru": "Черепаха вялая, не реагирует и холодная при правильно прогретом террариуме, либо с описанными признаками пневмонии — к герпетологу без промедления."
+   },
+   "notes": {
+    "en": "Heart rate depends on temperature: around 10 beats per minute when cool and up to 40 when warmed under the lamp. It cannot be counted at home through the shell; the vet uses a Doppler probe or ECG.",
+    "ru": "Пульс зависит от температуры: около 10 ударов в минуту в прохладе и до 40 после прогрева под лампой. Дома через панцирь его не сосчитать — врач использует допплер или ЭКГ."
+   },
+   "sources": [
+    {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Reptiles",
+     "url": "https://www.merckvetmanual.com/all-other-pets/reptiles/description-and-physical-characteristics-of-reptiles"
+    }
+   ],
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "id": "tortoise-all-respiratory-rate",
+   "species": "tortoise",
+   "size_group": "horsfield",
+   "life_stage": "all",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 2,
+   "normal_max": 10,
+   "red_flag": {
+    "en": "Open-mouth breathing, bubbles or mucus from the nostrils, squeaking or whistling, a stretched neck — pneumonia signs, prompt exotics vet.",
+    "ru": "Дыхание с открытым ртом, пузыри или слизь из ноздрей, писк или свист, вытянутая шея — признаки пневмонии, к герпетологу без промедления."
+   },
+   "notes": {
+    "en": "Only a few breaths per minute is normal: watch the movement of the forelimbs and throat for a full minute while the tortoise rests. Breathing is faster after warming and slower in the cool end.",
+    "ru": "Несколько вдохов в минуту — норма: следите за движением передних лап и горла целую минуту, пока черепаха отдыхает. После прогрева дыхание чаще, в прохладе — реже."
+   },
+   "sources": [
+    {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Reptiles",
+     "url": "https://www.merckvetmanual.com/all-other-pets/reptiles/description-and-physical-characteristics-of-reptiles"
+    }
+   ],
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "id": "red-eared-slider-all-heart-rate",
+   "species": "red-eared-slider",
+   "size_group": null,
+   "life_stage": "all",
+   "parameter": "heart_rate_bpm",
+   "unit": "bpm",
+   "normal_min": 20,
+   "normal_max": 40,
+   "red_flag": {
+    "en": "A turtle that floats tilted to one side, gapes, or blows bubbles from the nose — prompt exotics vet at any temperature; a limp, cold turtle in properly heated water is an emergency.",
+    "ru": "Черепаха плавает с креном на бок, дышит с открытым ртом или пускает пузыри из носа — к герпетологу без промедления при любой температуре; вялая холодная черепаха в правильно прогретой воде — экстренно."
+   },
+   "notes": {
+    "en": "Heart rate depends on water and basking temperature: about 20 beats per minute in cool water, up to 40 after basking. Not measurable at home; the vet uses a Doppler probe.",
+    "ru": "Пульс зависит от температуры воды и островка: около 20 ударов в минуту в прохладной воде, до 40 после баскинга. Дома не измерить — врач использует допплер."
+   },
+   "sources": [
+    {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Reptiles",
+     "url": "https://www.merckvetmanual.com/all-other-pets/reptiles/description-and-physical-characteristics-of-reptiles"
+    }
+   ],
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "id": "red-eared-slider-all-respiratory-rate",
+   "species": "red-eared-slider",
+   "size_group": null,
+   "life_stage": "all",
+   "parameter": "respiratory_rate_rpm",
+   "unit": "breaths/min",
+   "normal_min": 2,
+   "normal_max": 8,
+   "red_flag": {
+    "en": "Open-mouth breathing, bubbles or discharge from the nose, squeaking, or listing to one side in the water — pneumonia signs, prompt exotics vet.",
+    "ru": "Дыхание с открытым ртом, пузыри или выделения из носа, писк, крен в воде на один бок — признаки пневмонии, к герпетологу без промедления."
+   },
+   "notes": {
+    "en": "Counted between dives while the turtle rests on the basking platform: only a few breaths per minute is normal, faster after warming, slower in cool water.",
+    "ru": "Считают между нырками, пока черепаха отдыхает на островке: несколько вдохов в минуту — норма, после прогрева чаще, в прохладной воде реже."
+   },
+   "sources": [
+    {
+     "title": "BioVet — Физиологические нормы экзотических питомцев (таблица подписана главным врачом сети 20.09.2026)",
+     "url": "https://bio.vet/wiki/normy/fiziologicheskie-normy-ekzotov/"
+    },
+    {
+     "title": "Merck Veterinary Manual (pet owner edition) — Description and Physical Characteristics of Reptiles",
+     "url": "https://www.merckvetmanual.com/all-other-pets/reptiles/description-and-physical-characteristics-of-reptiles"
+    }
+   ],
+   "evidence": "clinic-reviewed"
   }
  ]
 }

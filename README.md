@@ -6,11 +6,14 @@ size group and life stage, with red-flag thresholds ("this reading means go
 to the clinic"). Plus a second table: pet-to-human age conversion, healthy
 weight ranges and the 9-point Body Condition Score scale.
 
-> **Status: pre-release (0.9).** Assembled from standard veterinary
-> references (Merck Veterinary Manual, WSAVA, university sources) and the
-> BioVet knowledge base; currently undergoing formal review by licensed
-> veterinarians of the BioVet clinic network (Moscow, 20 clinics, 24/7).
-> Version 1.0 will carry the review date.
+> **Status: 0.9.1 — partially vet-reviewed.** Exotic species (rabbit, guinea
+> pig, chinchilla, Syrian and dwarf hamsters, rat, ferret, budgerigar,
+> cockatiel, Horsfield's tortoise, red-eared slider) follow the reference
+> table signed by the chief veterinarian of the BioVet clinic network
+> (Moscow, 20 clinics, 24/7) on **2026-09-20** — these rows carry
+> `"evidence": "clinic-reviewed"`. Dog and cat rows are compiled from Merck
+> Veterinary Manual, VCA and WSAVA references and are still undergoing formal
+> review; version 1.0 will carry their review date.
 
 Normal vital signs for pets exist only as PDFs and posters. Every pet app
 that wants to answer "is my dog's heart rate normal?" hardcodes its own
@@ -18,10 +21,14 @@ table. This repo gives developers one validated, bilingual (en/ru) JSON.
 
 ## Data
 
-- [`data/vital-signs.json`](data/vital-signs.json) — 11 species
-  (dogs by size group, cats, rabbit, ferret, guinea pig, hamster, rat,
-  chinchilla, parrots, red-eared slider), each parameter with a normal
-  range, measurement notes and a red-flag threshold.
+- [`data/vital-signs.json`](data/vital-signs.json) — 13 species
+  (dogs by size group, cats, rabbit, ferret, guinea pig, Syrian and dwarf
+  hamsters, rat, chinchilla, budgerigar-size and cockatiel-size and large
+  parrots, Horsfield's tortoise, red-eared slider), each parameter with a
+  normal range, measurement notes, a red-flag threshold and an `evidence`
+  level (`clinic-reviewed` / `reference`). Reptile temperature rows are the
+  preferred optimal temperature zone of the enclosure (`potz_c`), not body
+  temperature.
 - [`data/age-weight.json`](data/age-weight.json) — pet age → human age
   (AAHA-style, dog size groups matter), healthy weight ranges by
   species/size, and the 9-point BCS scale with descriptions.

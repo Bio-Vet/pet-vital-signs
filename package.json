@@ -1,6 +1,6 @@
 {
   "name": "pet-vital-signs",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Vet-reviewed normal vital signs for companion animals + age/weight/BCS reference",
   "type": "module",
   "main": "data/vital-signs.json",

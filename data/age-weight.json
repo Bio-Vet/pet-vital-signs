@@ -1,14 +1,25 @@
 {
  "meta": {
   "name": "pet-age-weight-reference",
-  "description": "Reference tables: pet-to-human age conversion (dogs by size group, cats), healthy weight ranges by species and size group, and the 9-point WSAVA body condition score — 0.9 preview: compiled from the vet-reviewed BioVet knowledge base and international guidance (WSAVA/AAHA), formal veterinary sign-off pending.",
-  "version": "0.9.0",
+  "description": "Reference tables: pet-to-human age conversion (dogs by size group, cats), healthy weight ranges by species and size group, and the 9-point WSAVA body condition score — 0.9.1: exotic weights aligned with the table signed by the chief veterinarian of BioVet (2026-09-20); dog and cat tables compiled from WSAVA/AAHA/AKC references, veterinary sign-off pending.",
+  "version": "0.9.1",
   "license": "CC-BY-4.0",
   "attribution": "BioVet veterinary clinic network, Moscow — https://bio.vet",
-  "reviewed_by": "PENDING veterinary review (BioVet clinic network)",
-  "last_review": null,
+  "reviewed_by": "Exotic species — chief veterinarian of the BioVet clinic network, 2026-09-20 (rabbit, guinea pig, chinchilla, Syrian and dwarf hamsters, rat, ferret, budgerigar, cockatiel, Horsfield's tortoise, red-eared slider). Dogs and cats — veterinary sign-off pending.",
+  "last_review": "2026-09-20",
   "disclaimer": "Reference ranges for healthy resting adult animals unless stated otherwise. Individual variation is normal; a single reading outside the range is not a diagnosis. Educational data — not a substitute for veterinary examination.",
-  "review_status": "pending"
+  "review_status": "partial",
+  "evidence_levels": {
+   "clinic-reviewed": "value signed off by BioVet veterinarians",
+   "reference": "compiled from published veterinary references, clinic sign-off pending"
+  },
+  "changelog": [
+   {
+    "version": "0.9.1",
+    "date": "2026-09-20",
+    "changes": "Pack 20 confirmed by the chief veterinarian of BioVet (2026-09-20): exotic species aligned with the signed reference table — hamster, rat and chinchilla temperature, ferret and hamster respiratory rate, budgerigar heart/respiratory rate, red-eared slider water temperature (now potz_c); new rows for dwarf hamsters, cockatiel (parrot-medium), Horsfield's tortoise and red-eared slider heart/respiratory rate; per-row `evidence` field; healthy weights for exotics. Dogs and cats unchanged, sign-off pending."
+   }
+  ]
  },
  "age_conversion": [
   {
@@ -291,7 +302,8 @@
    "note": {
     "en": "Healthy weight is breed- and build-specific; within the group a Chihuahua at 3 kg and a Pug at 8 kg can both be ideal. Judge by body condition score, not the scale alone.",
     "ru": "Здоровый вес зависит от породы и сложения: в этой группе идеальны и чихуахуа в 3 кг, и мопс в 8 кг. Ориентируйтесь на кондицию тела (BCS), а не только на весы."
-   }
+   },
+   "evidence": "reference"
   },
   {
    "species": "dog",
@@ -315,7 +327,8 @@
    "note": {
     "en": "Medium breeds vary widely in build: a lean Border Collie and a stocky Bulldog of equal weight look completely different. Track waist and rib cover rather than a single target number.",
     "ru": "Средние породы сильно различаются сложением: поджарый бордер-колли и коренастый бульдог одного веса выглядят совершенно по-разному. Следите за талией и прощупываемостью рёбер, а не за одной цифрой."
-   }
+   },
+   "evidence": "reference"
   },
   {
    "species": "dog",
@@ -339,7 +352,8 @@
    "note": {
     "en": "Males typically weigh several kilograms more than females of the same breed. Obesity is especially harmful for large breeds because it accelerates joint disease.",
     "ru": "Кобели обычно тяжелее сук той же породы на несколько килограммов. Для крупных пород ожирение особенно вредно: оно ускоряет болезни суставов."
-   }
+   },
+   "evidence": "reference"
   },
   {
    "species": "dog",
@@ -363,7 +377,8 @@
    "note": {
     "en": "Giant breeds keep growing until 18–24 months; overfeeding a giant puppy strains developing joints. Adult weights above 90 kg occur in some lines but warrant a body-condition check.",
     "ru": "Гигантские породы растут до 18–24 месяцев; перекорм щенка-гиганта перегружает формирующиеся суставы. Взрослый вес выше 90 кг встречается в отдельных линиях, но требует проверки кондиции."
-   }
+   },
+   "evidence": "reference"
   },
   {
    "species": "cat",
@@ -383,7 +398,8 @@
    "note": {
     "en": "Typical healthy range for an average domestic cat; small females can be normal at about 3 kg, while large breeds such as the Maine Coon healthily reach 6–8 kg. Above the ideal, each extra half-kilogram matters.",
     "ru": "Типичный здоровый диапазон для обычной домашней кошки; мелкие кошки могут быть в норме и при 3 кг, а крупные породы вроде мейн-куна здорово весят 6–8 кг. Сверх идеала каждые лишние полкило значимы."
-   }
+   },
+   "evidence": "reference"
   },
   {
    "species": "rabbit",
@@ -403,7 +419,8 @@
    "note": {
     "en": "Dwarf breeds mature at about six months. In rabbits the dewlap fold in females is normal tissue, not automatically fat — assess condition over the ribs and spine.",
     "ru": "Карликовые породы формируются примерно к шести месяцам. Подгрудок у крольчих — нормальная складка, а не обязательно жир: кондицию оценивайте по рёбрам и позвоночнику."
-   }
+   },
+   "evidence": "reference"
   },
   {
    "species": "rabbit",
@@ -425,7 +442,8 @@
    "note": {
     "en": "Medium and standard breeds; pet rabbits gain weight easily on unlimited pellets. Hay should form the bulk of the diet, with pellets measured, otherwise obesity and pododermatitis follow.",
     "ru": "Средние и стандартные породы; домашние кролики легко толстеют на неограниченном комбикорме. Основой рациона должно быть сено, гранулы — дозированно, иначе ожирение и пододерматит."
-   }
+   },
+   "evidence": "reference"
   },
   {
    "species": "ferret",
@@ -443,7 +461,8 @@
    "note": {
     "en": "Males are roughly twice the size of females. Ferrets naturally gain up to 30–40% weight for winter and slim down in spring — seasonal swing is normal, sudden loss is not.",
     "ru": "Самцы примерно вдвое крупнее самок. К зиме хорьки в норме набирают до 30–40% веса и худеют весной — сезонные колебания нормальны, внезапная потеря веса — нет."
-   }
+   },
+   "evidence": "clinic-reviewed"
   },
   {
    "species": "ferret",
@@ -461,7 +480,8 @@
    "note": {
     "en": "Females are markedly smaller than males; the same seasonal weight cycle applies. A jill that keeps losing weight outside the spring moult needs a veterinary check.",
     "ru": "Самки заметно мельче самцов; сезонные колебания веса такие же. Самка, худеющая вне весенней линьки, требует ветеринарного осмотра."
-   }
+   },
+   "evidence": "clinic-reviewed"
   },
   {
    "species": "guinea-pig",
@@ -479,7 +499,8 @@
    "note": {
     "en": "Males (boars) typically weigh 900–1200 g, females (sows) 700–900 g. Weekly weighing on kitchen scales is the earliest illness detector in guinea pigs — loss over 50 g in a week deserves attention.",
     "ru": "Самцы обычно весят 900–1200 г, самки — 700–900 г. Еженедельное взвешивание на кухонных весах — самый ранний детектор болезни у морских свинок: потеря больше 50 г за неделю заслуживает внимания."
-   }
+   },
+   "evidence": "clinic-reviewed"
   },
   {
    "species": "hamster",
@@ -492,12 +513,13 @@
      "сирийский (золотистый) хомяк"
     ]
    },
-   "min_kg": 0.1,
-   "max_kg": 0.18,
+   "min_kg": 0.11,
+   "max_kg": 0.17,
    "note": {
     "en": "Females usually outweigh males. Weigh weekly with a cup on kitchen scales; cheek pouches full of food can distort a reading, so weigh before feeding.",
     "ru": "Самки обычно тяжелее самцов. Взвешивайте раз в неделю в стаканчике на кухонных весах; набитые защёчные мешки искажают цифру, поэтому взвешивайте до кормления."
-   }
+   },
+   "evidence": "clinic-reviewed"
   },
   {
    "species": "hamster",
@@ -514,12 +536,13 @@
      "хомячок Роборовского"
     ]
    },
-   "min_kg": 0.025,
+   "min_kg": 0.03,
    "max_kg": 0.05,
    "note": {
     "en": "Dwarf species weigh only 25–50 g, so even a few grams of change is significant. Djungarian and Campbell's hamsters are prone to diabetes — avoid sugary treats and monitor drinking.",
     "ru": "Карликовые виды весят всего 25–50 г, поэтому значимы даже несколько граммов изменения. Джунгарики и хомячки Кэмпбелла склонны к диабету — избегайте сладких лакомств и следите за жаждой."
-   }
+   },
+   "evidence": "clinic-reviewed"
   },
   {
    "species": "rat",
@@ -537,7 +560,8 @@
    "note": {
     "en": "Strong sex difference: males typically 450–650 g, females 250–450 g. Older males readily lay down abdominal fat; switch treats to vegetables and increase climbing space before restricting food.",
     "ru": "Выражен половой диморфизм: самцы обычно 450–650 г, самки — 250–450 г. Возрастные самцы легко нагуливают жир на животе; сначала замените лакомства овощами и добавьте лазанья, а не урезайте корм."
-   }
+   },
+   "evidence": "clinic-reviewed"
   },
   {
    "species": "chinchilla",
@@ -555,7 +579,103 @@
    "note": {
     "en": "Unusually for rodents, females are larger than males. Dense fur hides body shape completely, so condition is judged by palpating the spine and pelvis, and by regular weighing.",
     "ru": "Необычно для грызунов: самки крупнее самцов. Плотный мех полностью скрывает силуэт, поэтому кондицию оценивают прощупыванием позвоночника и таза и регулярным взвешиванием."
-   }
+   },
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "species": "parrot-small",
+   "size_group": "budgerigar",
+   "example_breeds": {
+    "en": [
+     "Budgerigar"
+    ],
+    "ru": [
+     "волнистый попугай"
+    ]
+   },
+   "min_kg": 0.03,
+   "max_kg": 0.045,
+   "note": {
+    "en": "Weigh weekly on kitchen scales at the same time of day; a drop of 10% or more is a reason to see an avian vet even if the bird looks fine.",
+    "ru": "Взвешивайте раз в неделю на кухонных весах в одно и то же время; падение веса на 10% и больше — повод показать птицу орнитологу, даже если она выглядит здоровой."
+   },
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "species": "parrot-medium",
+   "size_group": "cockatiel",
+   "example_breeds": {
+    "en": [
+     "Cockatiel"
+    ],
+    "ru": [
+     "корелла"
+    ]
+   },
+   "min_kg": 0.08,
+   "max_kg": 0.11,
+   "note": {
+    "en": "Weight is the most honest home indicator for birds: feathers hide body condition completely. Weigh weekly, log the result.",
+    "ru": "Вес — самый честный домашний показатель у птиц: перо полностью скрывает упитанность. Взвешивайте раз в неделю и записывайте."
+   },
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "species": "tortoise",
+   "size_group": "horsfield",
+   "example_breeds": {
+    "en": [
+     "Horsfield's (Russian) tortoise"
+    ],
+    "ru": [
+     "среднеазиатская (степная) черепаха"
+    ]
+   },
+   "min_kg": 0.8,
+   "max_kg": 1.5,
+   "note": {
+    "en": "Adult weight; growth is slow and depends on temperature and diet. Skin folds that no longer retract under the shell mean obesity; swollen joints — gout from excess protein.",
+    "ru": "Вес взрослой особи; рост медленный и зависит от температуры и рациона. Складки кожи, которые не убираются под панцирь, — ожирение; отёкшие суставы — подагра от избытка белка."
+   },
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "species": "red-eared-slider",
+   "size_group": "female",
+   "example_breeds": {
+    "en": [
+     "Red-eared slider (female)"
+    ],
+    "ru": [
+     "красноухая черепаха, самка"
+    ]
+   },
+   "min_kg": 1.0,
+   "max_kg": 2.0,
+   "note": {
+    "en": "Females grow markedly larger than males. Weigh on kitchen scales after the turtle has been out of the water for a minute.",
+    "ru": "Самки заметно крупнее самцов. Взвешивайте на кухонных весах, дав черепахе минуту обсохнуть."
+   },
+   "evidence": "clinic-reviewed"
+  },
+  {
+   "species": "red-eared-slider",
+   "size_group": "male",
+   "example_breeds": {
+    "en": [
+     "Red-eared slider (male)"
+    ],
+    "ru": [
+     "красноухая черепаха, самец"
+    ]
+   },
+   "min_kg": 0.5,
+   "max_kg": 1.0,
+   "note": {
+    "en": "Males stay smaller and have longer front claws and a longer tail. Weigh weekly during growth, monthly for adults.",
+    "ru": "Самцы мельче, с длинными когтями на передних лапах и длинным хвостом. Взвешивайте раз в неделю, пока черепаха растёт, взрослую — раз в месяц."
+   },
+   "evidence": "clinic-reviewed"
   }
  ],
  "healthy_weight_sources": [

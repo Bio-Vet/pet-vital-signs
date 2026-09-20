@@ -17,7 +17,7 @@ const hasSources = (o, at) => {
 // — vital-signs.json —
 const v = JSON.parse(readFileSync(new URL("../data/vital-signs.json", import.meta.url), "utf8"));
 if (v.meta?.license !== "CC-BY-4.0") err("vital-signs: meta.license must be CC-BY-4.0");
-const SPECIES = new Set(["dog", "cat", "rabbit", "ferret", "guinea-pig", "hamster", "rat", "chinchilla", "parrot-small", "parrot-large", "red-eared-slider"]);
+const SPECIES = new Set(["dog", "cat", "rabbit", "ferret", "guinea-pig", "hamster", "rat", "chinchilla", "parrot-small", "parrot-medium", "parrot-large", "red-eared-slider", "tortoise"]);
 const PARAMS = new Set(["temperature_c", "heart_rate_bpm", "respiratory_rate_rpm", "crt_sec", "potz_c"]);
 const STAGES = new Set(["neonate", "puppy", "kitten", "young", "adult", "senior", "all"]);
 const ids = new Set();
