@@ -28,7 +28,9 @@ for (const it of v.vitals ?? []) {
 	if (!SPECIES.has(it.species)) err(`${at}: bad species "${it.species}"`);
 	if (!PARAMS.has(it.parameter)) err(`${at}: bad parameter "${it.parameter}"`);
 	if (!STAGES.has(it.life_stage)) err(`${at}: bad life_stage "${it.life_stage}"`);
-	if (typeof it.normal_min !== "number" || typeof it.normal_max !== "number" || it.normal_min >= it.normal_max)
+	// normal_min = null: нижней границы нет, норма «до normal_max»
+	if ((it.normal_min !== null && typeof it.normal_min !== "number") || typeof it.normal_max !== "number" ||
+		(it.normal_min !== null && it.normal_min >= it.normal_max))
 		err(`${at}: normal_min/max invalid`);
 	biLang(it, at, "red_flag", 10);
 	biLang(it, at, "notes", 20);

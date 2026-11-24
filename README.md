@@ -6,14 +6,15 @@ size group and life stage, with red-flag thresholds ("this reading means go
 to the clinic"). Plus a second table: pet-to-human age conversion, healthy
 weight ranges and the 9-point Body Condition Score scale.
 
-> **Status: 0.9.1 — partially vet-reviewed.** Exotic species (rabbit, guinea
+> **Status: 1.0.0 — vet-reviewed.** Exotic species (rabbit, guinea
 > pig, chinchilla, Syrian and dwarf hamsters, rat, ferret, budgerigar,
 > cockatiel, Horsfield's tortoise, red-eared slider) follow the reference
 > table signed by the chief veterinarian of the BioVet clinic network
-> (Moscow, 20 clinics, 24/7) on **2026-09-20** — these rows carry
-> `"evidence": "clinic-reviewed"`. Dog and cat rows are compiled from Merck
-> Veterinary Manual, VCA and WSAVA references and are still undergoing formal
-> review; version 1.0 will carry their review date.
+> (Moscow, 24/7) on **2026-09-20**; dog and cat rows, healthy weights,
+> age conversion and the BCS scale were signed off by BioVet
+> veterinarians on **2026-11-24**. Every row carries
+> `"evidence": "clinic-reviewed"`. Where the vets give only an upper
+> limit (adult cat resting respiratory rate: up to 30), `normal_min` is `null`.
 
 Normal vital signs for pets exist only as PDFs and posters. Every pet app
 that wants to answer "is my dog's heart rate normal?" hardcodes its own

@@ -1,19 +1,24 @@
 {
  "meta": {
   "name": "pet-age-weight-reference",
-  "description": "Reference tables: pet-to-human age conversion (dogs by size group, cats), healthy weight ranges by species and size group, and the 9-point WSAVA body condition score — 0.9.1: exotic weights aligned with the table signed by the chief veterinarian of BioVet (2026-09-20); dog and cat tables compiled from WSAVA/AAHA/AKC references, veterinary sign-off pending.",
-  "version": "0.9.1",
+  "description": "Reference tables: pet-to-human age conversion (dogs by size group, cats), healthy weight ranges by species and size group, and the 9-point WSAVA body condition score — 1.0.0: all tables signed off by BioVet veterinarians (exotic weights 2026-09-20; dog and cat weights, age conversion and the body condition score 2026-11-24).",
+  "version": "1.0.0",
   "license": "CC-BY-4.0",
   "attribution": "BioVet veterinary clinic network, Moscow — https://bio.vet",
-  "reviewed_by": "Exotic species — chief veterinarian of the BioVet clinic network, 2026-09-20 (rabbit, guinea pig, chinchilla, Syrian and dwarf hamsters, rat, ferret, budgerigar, cockatiel, Horsfield's tortoise, red-eared slider). Dogs and cats — veterinary sign-off pending.",
-  "last_review": "2026-09-20",
+  "reviewed_by": "Exotic species — chief veterinarian of the BioVet clinic network, 2026-09-20 (rabbit, guinea pig, chinchilla, Syrian and dwarf hamsters, rat, ferret, budgerigar, cockatiel, Horsfield's tortoise, red-eared slider). Dogs and cats — veterinarians of the BioVet clinic network, 2026-11-24 (review pack 33).",
+  "last_review": "2026-11-24",
   "disclaimer": "Reference ranges for healthy resting adult animals unless stated otherwise. Individual variation is normal; a single reading outside the range is not a diagnosis. Educational data — not a substitute for veterinary examination.",
-  "review_status": "partial",
+  "review_status": "complete",
   "evidence_levels": {
    "clinic-reviewed": "value signed off by BioVet veterinarians",
    "reference": "compiled from published veterinary references, clinic sign-off pending"
   },
   "changelog": [
+   {
+    "version": "1.0.0",
+    "date": "2026-11-24",
+    "changes": "Pack 33 signed off by BioVet veterinarians (2026-11-24): large/giant dog boundary set to 45 kg as used by bio.vet services — healthy weight large 25–45 kg (was 25–40), giant 45–90 kg (was 40–90); dog and cat weights, age conversion and BCS confirmed."
+   },
    {
     "version": "0.9.1",
     "date": "2026-09-20",
@@ -303,7 +308,7 @@
     "en": "Healthy weight is breed- and build-specific; within the group a Chihuahua at 3 kg and a Pug at 8 kg can both be ideal. Judge by body condition score, not the scale alone.",
     "ru": "Здоровый вес зависит от породы и сложения: в этой группе идеальны и чихуахуа в 3 кг, и мопс в 8 кг. Ориентируйтесь на кондицию тела (BCS), а не только на весы."
    },
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "species": "dog",
@@ -328,7 +333,7 @@
     "en": "Medium breeds vary widely in build: a lean Border Collie and a stocky Bulldog of equal weight look completely different. Track waist and rib cover rather than a single target number.",
     "ru": "Средние породы сильно различаются сложением: поджарый бордер-колли и коренастый бульдог одного веса выглядят совершенно по-разному. Следите за талией и прощупываемостью рёбер, а не за одной цифрой."
    },
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "species": "dog",
@@ -348,12 +353,12 @@
     ]
    },
    "min_kg": 25,
-   "max_kg": 40,
+   "max_kg": 45,
    "note": {
     "en": "Males typically weigh several kilograms more than females of the same breed. Obesity is especially harmful for large breeds because it accelerates joint disease.",
     "ru": "Кобели обычно тяжелее сук той же породы на несколько килограммов. Для крупных пород ожирение особенно вредно: оно ускоряет болезни суставов."
    },
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "species": "dog",
@@ -372,13 +377,13 @@
      "ирландский волкодав"
     ]
    },
-   "min_kg": 40,
+   "min_kg": 45,
    "max_kg": 90,
    "note": {
     "en": "Giant breeds keep growing until 18–24 months; overfeeding a giant puppy strains developing joints. Adult weights above 90 kg occur in some lines but warrant a body-condition check.",
     "ru": "Гигантские породы растут до 18–24 месяцев; перекорм щенка-гиганта перегружает формирующиеся суставы. Взрослый вес выше 90 кг встречается в отдельных линиях, но требует проверки кондиции."
    },
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "species": "cat",
@@ -399,7 +404,7 @@
     "en": "Typical healthy range for an average domestic cat; small females can be normal at about 3 kg, while large breeds such as the Maine Coon healthily reach 6–8 kg. Above the ideal, each extra half-kilogram matters.",
     "ru": "Типичный здоровый диапазон для обычной домашней кошки; мелкие кошки могут быть в норме и при 3 кг, а крупные породы вроде мейн-куна здорово весят 6–8 кг. Сверх идеала каждые лишние полкило значимы."
    },
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "species": "rabbit",

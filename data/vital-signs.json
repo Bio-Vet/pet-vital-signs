@@ -1,19 +1,24 @@
 {
  "meta": {
   "name": "pet-vital-signs",
-  "description": "Normal physiological parameters (temperature, heart rate, respiratory rate, CRT, POTZ for reptiles) for companion animals by species, size group and life stage, with red-flag thresholds — 0.9.1: exotic species aligned with the reference table signed by the chief veterinarian of the BioVet clinic network (2026-09-20); dog and cat rows compiled from Merck/VCA/WSAVA references, veterinary sign-off pending.",
-  "version": "0.9.1",
+  "description": "Normal physiological parameters (temperature, heart rate, respiratory rate, CRT, POTZ for reptiles) for companion animals by species, size group and life stage, with red-flag thresholds — 1.0.0: all rows signed off by BioVet veterinarians (exotic species 2026-09-20, dogs and cats 2026-11-24). normal_min may be null when the vets give only an upper limit (adult cat resting respiratory rate: up to 30).",
+  "version": "1.0.0",
   "license": "CC-BY-4.0",
   "attribution": "BioVet veterinary clinic network, Moscow — https://bio.vet",
-  "reviewed_by": "Exotic species — chief veterinarian of the BioVet clinic network, 2026-09-20 (rabbit, guinea pig, chinchilla, Syrian and dwarf hamsters, rat, ferret, budgerigar, cockatiel, Horsfield's tortoise, red-eared slider). Dogs and cats — veterinary sign-off pending.",
-  "last_review": "2026-09-20",
+  "reviewed_by": "Exotic species — chief veterinarian of the BioVet clinic network, 2026-09-20 (rabbit, guinea pig, chinchilla, Syrian and dwarf hamsters, rat, ferret, budgerigar, cockatiel, Horsfield's tortoise, red-eared slider). Dogs and cats — veterinarians of the BioVet clinic network, 2026-11-24 (review pack 33).",
+  "last_review": "2026-11-24",
   "disclaimer": "Reference ranges for healthy resting adult animals unless stated otherwise. Individual variation is normal; a single reading outside the range is not a diagnosis. Educational data — not a substitute for veterinary examination.",
-  "review_status": "partial",
+  "review_status": "complete",
   "evidence_levels": {
    "clinic-reviewed": "value signed off by BioVet veterinarians",
    "reference": "compiled from published veterinary references, clinic sign-off pending"
   },
   "changelog": [
+   {
+    "version": "1.0.0",
+    "date": "2026-11-24",
+    "changes": "Pack 33 signed off by BioVet veterinarians (2026-11-24): dog and cat rows now clinic-reviewed. Adult cat temperature 37.5–39.5 °C (was 38.1–39.2), same-day threshold above 39.5 °C (was 39.7); adult cat resting respiratory rate — up to 30 (normal_min null, was 20–30); adult dog temperature 37.5–39.5 °C for all size groups (was 37.5–39.2); puppy heart rate 140–220 bpm (was 160–220); \"can exceed 200 movements per minute\" removed from dog breathing notes. Kitten, puppy temperature and other dog/cat ranges confirmed unchanged. BioVet norms pages added as the first source of each dog/cat row."
+   },
    {
     "version": "0.9.1",
     "date": "2026-09-20",
@@ -30,7 +35,7 @@
    "parameter": "temperature_c",
    "unit": "°C",
    "normal_min": 37.5,
-   "normal_max": 39.2,
+   "normal_max": 39.5,
    "red_flag": {
     "en": "Above 40.0 °C or below 37.0 °C — see a veterinarian the same day. 41.0 °C and above (possible heatstroke) or a cold, lethargic dog is an emergency.",
     "ru": "Выше 40,0 °C или ниже 37,0 °C — покажите собаку врачу в тот же день. 41,0 °C и выше (возможен тепловой удар) либо холодная и вялая собака — экстренное состояние."
@@ -41,6 +46,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     },
@@ -49,7 +58,7 @@
      "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-small-adult-heart-rate",
@@ -70,6 +79,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -78,7 +91,7 @@
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-small-adult-respiratory-rate",
@@ -94,10 +107,14 @@
     "ru": "Больше 40 вдохов в минуту в полном покое (не одышка после нагрузки), стабильно выше 30 во сне, затруднённое или шумное дыхание, синюшные дёсны или язык — немедленно к врачу."
    },
    "notes": {
-    "en": "Count chest movements for 30 seconds while the dog sleeps or rests calmly and multiply by two; one rise-and-fall equals one breath. Never count during or right after panting, play, heat or stress — panting is normal cooling in dogs and can exceed 200 movements per minute.",
-    "ru": "Считайте движения грудной клетки 30 секунд, пока собака спит или спокойно лежит, и умножьте на два; подъём и опускание — один вдох. Не считайте во время и сразу после одышки, игры, жары или стресса — частое дыхание с открытой пастью у собак нормальная терморегуляция, до 200 движений в минуту."
+    "en": "Count chest movements for 30 seconds while the dog sleeps or rests calmly and multiply by two; one rise-and-fall equals one breath. Never count during or right after panting, play, heat or stress — panting is normal cooling in dogs.",
+    "ru": "Считайте движения грудной клетки 30 секунд, пока собака спит или спокойно лежит, и умножьте на два; подъём и опускание — один вдох. Не считайте во время и сразу после одышки, игры, жары или стресса — частое дыхание с открытой пастью у собак — нормальная терморегуляция."
    },
    "sources": [
+    {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
     {
      "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
      "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
@@ -107,7 +124,7 @@
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-medium-adult-temperature",
@@ -117,7 +134,7 @@
    "parameter": "temperature_c",
    "unit": "°C",
    "normal_min": 37.5,
-   "normal_max": 39.2,
+   "normal_max": 39.5,
    "red_flag": {
     "en": "Above 40.0 °C or below 37.0 °C — see a veterinarian the same day. 41.0 °C and above (possible heatstroke) or a cold, lethargic dog is an emergency.",
     "ru": "Выше 40,0 °C или ниже 37,0 °C — покажите собаку врачу в тот же день. 41,0 °C и выше (возможен тепловой удар) либо холодная и вялая собака — экстренное состояние."
@@ -128,6 +145,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     },
@@ -136,7 +157,7 @@
      "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-medium-adult-heart-rate",
@@ -157,6 +178,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -165,7 +190,7 @@
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-medium-adult-respiratory-rate",
@@ -181,10 +206,14 @@
     "ru": "Больше 40 вдохов в минуту в полном покое (не одышка после нагрузки), стабильно выше 30 во сне, затруднённое или шумное дыхание, синюшные дёсны или язык — немедленно к врачу."
    },
    "notes": {
-    "en": "Count chest movements for 30 seconds while the dog sleeps or rests calmly and multiply by two; one rise-and-fall equals one breath. Never count during or right after panting, play, heat or stress — panting is normal cooling in dogs and can exceed 200 movements per minute.",
-    "ru": "Считайте движения грудной клетки 30 секунд, пока собака спит или спокойно лежит, и умножьте на два; подъём и опускание — один вдох. Не считайте во время и сразу после одышки, игры, жары или стресса — частое дыхание с открытой пастью у собак нормальная терморегуляция, до 200 движений в минуту."
+    "en": "Count chest movements for 30 seconds while the dog sleeps or rests calmly and multiply by two; one rise-and-fall equals one breath. Never count during or right after panting, play, heat or stress — panting is normal cooling in dogs.",
+    "ru": "Считайте движения грудной клетки 30 секунд, пока собака спит или спокойно лежит, и умножьте на два; подъём и опускание — один вдох. Не считайте во время и сразу после одышки, игры, жары или стресса — частое дыхание с открытой пастью у собак — нормальная терморегуляция."
    },
    "sources": [
+    {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
     {
      "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
      "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
@@ -194,7 +223,7 @@
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-large-adult-temperature",
@@ -204,7 +233,7 @@
    "parameter": "temperature_c",
    "unit": "°C",
    "normal_min": 37.5,
-   "normal_max": 39.2,
+   "normal_max": 39.5,
    "red_flag": {
     "en": "Above 40.0 °C or below 37.0 °C — see a veterinarian the same day. 41.0 °C and above (possible heatstroke) or a cold, lethargic dog is an emergency.",
     "ru": "Выше 40,0 °C или ниже 37,0 °C — покажите собаку врачу в тот же день. 41,0 °C и выше (возможен тепловой удар) либо холодная и вялая собака — экстренное состояние."
@@ -215,6 +244,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     },
@@ -223,7 +256,7 @@
      "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-large-adult-heart-rate",
@@ -244,6 +277,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -252,7 +289,7 @@
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-large-adult-respiratory-rate",
@@ -268,10 +305,14 @@
     "ru": "Больше 40 вдохов в минуту в полном покое (не одышка после нагрузки), стабильно выше 30 во сне, затруднённое или шумное дыхание, синюшные дёсны или язык — немедленно к врачу."
    },
    "notes": {
-    "en": "Count chest movements for 30 seconds while the dog sleeps or rests calmly and multiply by two; one rise-and-fall equals one breath. Never count during or right after panting, play, heat or stress — panting is normal cooling in dogs and can exceed 200 movements per minute.",
-    "ru": "Считайте движения грудной клетки 30 секунд, пока собака спит или спокойно лежит, и умножьте на два; подъём и опускание — один вдох. Не считайте во время и сразу после одышки, игры, жары или стресса — частое дыхание с открытой пастью у собак нормальная терморегуляция, до 200 движений в минуту."
+    "en": "Count chest movements for 30 seconds while the dog sleeps or rests calmly and multiply by two; one rise-and-fall equals one breath. Never count during or right after panting, play, heat or stress — panting is normal cooling in dogs.",
+    "ru": "Считайте движения грудной клетки 30 секунд, пока собака спит или спокойно лежит, и умножьте на два; подъём и опускание — один вдох. Не считайте во время и сразу после одышки, игры, жары или стресса — частое дыхание с открытой пастью у собак — нормальная терморегуляция."
    },
    "sources": [
+    {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
     {
      "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
      "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
@@ -281,7 +322,7 @@
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-giant-adult-temperature",
@@ -291,7 +332,7 @@
    "parameter": "temperature_c",
    "unit": "°C",
    "normal_min": 37.5,
-   "normal_max": 39.2,
+   "normal_max": 39.5,
    "red_flag": {
     "en": "Above 40.0 °C or below 37.0 °C — see a veterinarian the same day. 41.0 °C and above (possible heatstroke) or a cold, lethargic dog is an emergency.",
     "ru": "Выше 40,0 °C или ниже 37,0 °C — покажите собаку врачу в тот же день. 41,0 °C и выше (возможен тепловой удар) либо холодная и вялая собака — экстренное состояние."
@@ -302,6 +343,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     },
@@ -310,7 +355,7 @@
      "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-giant-adult-heart-rate",
@@ -331,6 +376,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -339,7 +388,7 @@
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-giant-adult-respiratory-rate",
@@ -355,10 +404,14 @@
     "ru": "Больше 40 вдохов в минуту в полном покое (не одышка после нагрузки), стабильно выше 30 во сне, затруднённое или шумное дыхание, синюшные дёсны или язык — немедленно к врачу."
    },
    "notes": {
-    "en": "Count chest movements for 30 seconds while the dog sleeps or rests calmly and multiply by two; one rise-and-fall equals one breath. Never count during or right after panting, play, heat or stress — panting is normal cooling in dogs and can exceed 200 movements per minute.",
-    "ru": "Считайте движения грудной клетки 30 секунд, пока собака спит или спокойно лежит, и умножьте на два; подъём и опускание — один вдох. Не считайте во время и сразу после одышки, игры, жары или стресса — частое дыхание с открытой пастью у собак нормальная терморегуляция, до 200 движений в минуту."
+    "en": "Count chest movements for 30 seconds while the dog sleeps or rests calmly and multiply by two; one rise-and-fall equals one breath. Never count during or right after panting, play, heat or stress — panting is normal cooling in dogs.",
+    "ru": "Считайте движения грудной клетки 30 секунд, пока собака спит или спокойно лежит, и умножьте на два; подъём и опускание — один вдох. Не считайте во время и сразу после одышки, игры, жары или стресса — частое дыхание с открытой пастью у собак — нормальная терморегуляция."
    },
    "sources": [
+    {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
     {
      "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
      "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
@@ -368,7 +421,7 @@
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-puppy-temperature",
@@ -389,6 +442,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     },
@@ -397,7 +454,7 @@
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-puppy-heart-rate",
@@ -406,7 +463,7 @@
    "life_stage": "puppy",
    "parameter": "heart_rate_bpm",
    "unit": "bpm",
-   "normal_min": 160,
+   "normal_min": 140,
    "normal_max": 220,
    "red_flag": {
     "en": "A puppy whose heart rate is persistently slow for its age, or who is weak with pale gums, needs a vet the same day. In very young puppies a slow heartbeat usually signals chilling or lack of oxygen — treat it as an emergency.",
@@ -418,6 +475,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -426,7 +487,7 @@
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-puppy-respiratory-rate",
@@ -447,6 +508,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
      "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
     },
@@ -455,7 +520,7 @@
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-neonate-temperature",
@@ -476,6 +541,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     },
@@ -484,7 +553,7 @@
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "dog-all-crt",
@@ -505,6 +574,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у собак (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-sobaki/"
+    },
+    {
      "title": "VCA Animal Hospitals — First Aid for Dogs",
      "url": "https://vcahospitals.com/know-your-pet/first-aid-for-dogs"
     },
@@ -513,7 +586,7 @@
      "url": "https://www.merckvetmanual.com/dog-owners/introduction-to-dogs"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "cat-adult-temperature",
@@ -522,17 +595,21 @@
    "life_stage": "adult",
    "parameter": "temperature_c",
    "unit": "°C",
-   "normal_min": 38.1,
-   "normal_max": 39.2,
+   "normal_min": 37.5,
+   "normal_max": 39.5,
    "red_flag": {
-    "en": "Above 39.7 °C or below 37.5 °C — call the clinic the same day. Above 40.5 °C, or a cold, limp cat, is an emergency.",
-    "ru": "Выше 39,7 °C или ниже 37,5 °C — свяжитесь с клиникой в тот же день. Выше 40,5 °C либо холодная, обмякшая кошка — экстренная ситуация."
+    "en": "Above 39.5 °C or below 37.5 °C — call the clinic the same day. Above 40.5 °C, or a cold, limp cat, is an emergency.",
+    "ru": "Выше 39,5 °C или ниже 37,5 °C — свяжитесь с клиникой в тот же день. Выше 40,5 °C либо холодная, обмякшая кошка — экстренная ситуация."
    },
    "notes": {
     "en": "Measure rectally with a digital thermometer and lubricant, ideally with a second person gently restraining the cat in a towel. Stress from a car ride or clinic visit can raise the reading by a few tenths of a degree; human ear thermometers are inaccurate in cats.",
     "ru": "Измеряйте ректально электронным термометром со смазкой; лучше вдвоём, мягко зафиксировав кошку в полотенце. Стресс от поездки или визита в клинику может завысить показание на несколько десятых градуса; ушные термометры для людей у кошек неточны."
    },
    "sources": [
+    {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у кошек (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-koshki/"
+    },
     {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
@@ -542,7 +619,7 @@
      "url": "https://vcahospitals.com/know-your-pet/taking-your-pets-temperature"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "cat-adult-heart-rate",
@@ -563,6 +640,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у кошек (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-koshki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -571,7 +652,7 @@
      "url": "https://www.merckvetmanual.com/cat-owners/introduction-to-cats"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "cat-adult-respiratory-rate",
@@ -580,7 +661,7 @@
    "life_stage": "adult",
    "parameter": "respiratory_rate_rpm",
    "unit": "breaths/min",
-   "normal_min": 20,
+   "normal_min": null,
    "normal_max": 30,
    "red_flag": {
     "en": "A sleeping rate consistently above 30, a resting rate above 40, open-mouth breathing, panting, or visible belly effort — emergency. Cats almost never pant, even after play.",
@@ -592,6 +673,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у кошек (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-koshki/"
+    },
+    {
      "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
      "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
     },
@@ -600,7 +685,7 @@
      "url": "https://www.merckvetmanual.com/cat-owners/introduction-to-cats"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "cat-kitten-temperature",
@@ -621,6 +706,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у кошек (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-koshki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Normal Rectal Temperature Ranges",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     },
@@ -629,7 +718,7 @@
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "cat-kitten-heart-rate",
@@ -650,6 +739,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у кошек (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-koshki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Resting Heart Rates",
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/resting-heart-rates"
     },
@@ -658,7 +751,7 @@
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "cat-kitten-respiratory-rate",
@@ -679,6 +772,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у кошек (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-koshki/"
+    },
+    {
      "title": "VCA Animal Hospitals — Home Breathing Rate Evaluation",
      "url": "https://vcahospitals.com/know-your-pet/home-breathing-rate-evaluation"
     },
@@ -687,7 +784,7 @@
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "cat-neonate-temperature",
@@ -708,6 +805,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у кошек (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-koshki/"
+    },
+    {
      "title": "Merck Veterinary Manual — Management of the Neonate in Dogs and Cats",
      "url": "https://www.merckvetmanual.com/management-and-nutrition/management-of-the-neonate/management-of-the-neonate-in-dogs-and-cats"
     },
@@ -716,7 +817,7 @@
      "url": "https://www.merckvetmanual.com/reference-values-and-conversion-tables/reference-guides/normal-rectal-temperature-ranges"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "cat-all-crt",
@@ -737,6 +838,10 @@
    },
    "sources": [
     {
+     "title": "BioVet — Нормы температуры, пульса и дыхания у кошек (подписано врачами сети 24.11.2026)",
+     "url": "https://bio.vet/wiki/normy/temperatura-puls-dyhanie-koshki/"
+    },
+    {
      "title": "VCA Animal Hospitals — First Aid for Dogs",
      "url": "https://vcahospitals.com/know-your-pet/first-aid-for-dogs"
     },
@@ -745,7 +850,7 @@
      "url": "https://www.merckvetmanual.com/cat-owners/introduction-to-cats"
     }
    ],
-   "evidence": "reference"
+   "evidence": "clinic-reviewed"
   },
   {
    "id": "rabbit-adult-temperature",
